@@ -2,7 +2,7 @@
 title: "A deep reinforcement learning technique for bug detection in video games"
 collection: publications
 category: manuscripts
-permalink: [DOI](https://doi.org/10.1007/s41870-022-01047-z)
+permalink: /publication/2024-01-bug-detection-paper
 excerpt: 'This paper analyses neural networks deployed to play games to uncover bugs in the games.'
 date: 01-2024
 venue: 'International Journal of Information Technology'
