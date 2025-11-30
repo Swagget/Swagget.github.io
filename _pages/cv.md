@@ -38,7 +38,7 @@ Work experience
   * Sensight Labs (Friendly Brands now)
   * Location: Bangalore
   * Duties included: Created an intelligent shopping cart to make checkout queues obsolete. Developed software to identify grocery products through computer vision. Projects include: Detecting when products are put into a cart, Webscraping for Grocery App, Automated data analysis, Colour based item selection, Created a Visual image Text-based search engine, Created a cropping tool to segment videos to generate still image databases
-  * Supervisor: Maurice
+  * Supervisor: Prashant Maurice
 
 * August 2019 - November 2019: Machine Learning Engineer
   * IceCream Labs
