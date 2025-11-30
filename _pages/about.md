@@ -1,11 +1,13 @@
 ---
 permalink: /
 title: "Aniket Wagde | PhD Student Researcher in AI & Reinforcement Learning"
-author_profile: true
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+Hi, thank you for visiting my home page!
 
 I'm a PhD student in Computer Science at the University of Illinois at Chicago (UIC), under the advisement of Professor [Aadirupa Saha](https://aadirupa.github.io/), where I explore the theoretical foundations and practical applications of intelligent decision-making systems. My research lies at the intersection of reinforcement learning, convex optimization, and machine learning theory, with a particular focus on how agents can learn efficiently in continuous, complex environments.
 
