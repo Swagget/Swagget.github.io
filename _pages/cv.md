@@ -9,7 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-Click [here]({{ base_path }}/files/Resume.pdf) to download my CV as a PDF.
+# (Click [here]&#40;{{ base_path }}/files/Resume.pdf&#41; to download my CV as a PDF.)
+📄 **[Download my CV as a PDF]({{ base_path }}/files/Resume.pdf)**
 
 Education
 ======
