@@ -9,7 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-# (Click [here]&#40;{{ base_path }}/files/Resume.pdf&#41; to download my CV as a PDF.)
 📄 **[Download my CV as a PDF]({{ base_path }}/files/Resume.pdf)**
 
 Education
@@ -87,15 +86,19 @@ Talks
   {% endfor %}</ul>
 -->
 
-# (Teaching)
+[//]: # (# &#40;Teaching&#41;)
 
-# (======)
+[//]: # ()
+[//]: # (# &#40;======&#41;)
 
-# (  <ul>{% for post in site.teaching reversed %})
+[//]: # ()
+[//]: # (# &#40;  <ul>{% for post in site.teaching reversed %}&#41;)
 
-# (    {% include archive-single-cv.html %})
+[//]: # ()
+[//]: # (# &#40;    {% include archive-single-cv.html %}&#41;)
 
-# (  {% endfor %}</ul>)
+[//]: # ()
+[//]: # (# &#40;  {% endfor %}</ul>&#41;)
   
 <!--Service and leadership
 ======
