@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Aniket Wagde \| PhD Student in AI & Reinforcement Learning"
+title: "Aniket Wagde, PhD Student in AI & Reinforcement Learning"
 author_profile: true
 redirect_from: 
   - /about/
