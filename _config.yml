@@ -26,9 +26,9 @@ author:
   avatar           : "profile.jpg"
   name             : "Aniket Wagde"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "PhD Student at UIC, studying RL"
   location         : "Chicago"
-  employer         : "UIC Chicago"
+  employer         : "University of Illinois Chicago"
   uri              : # URL
   email            : "awagde2@uic.edu" 
 
