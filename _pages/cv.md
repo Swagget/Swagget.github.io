@@ -78,29 +78,3 @@ Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-<!--
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
--->
-
-[//]: # (# &#40;Teaching&#41;)
-
-[//]: # ()
-[//]: # (# &#40;======&#41;)
-
-[//]: # ()
-[//]: # (# &#40;  <ul>{% for post in site.teaching reversed %}&#41;)
-
-[//]: # ()
-[//]: # (# &#40;    {% include archive-single-cv.html %}&#41;)
-
-[//]: # ()
-[//]: # (# &#40;  {% endfor %}</ul>&#41;)
-  
-<!--Service and leadership
-======
-* Currently signed in to 43 different slack teams
--->
