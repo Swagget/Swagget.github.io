@@ -93,12 +93,20 @@ publication_category:
 
 # Project Category
 project_category:
-  research:
-    title: 'Research Projects'
-  course:
-    title: 'Course Projects'
-  personal:
-    title: 'Personal Projects'
+  cv:
+    title: 'Computer Vision'
+  ml:
+    title: 'Machine Learning'
+  rl:
+    title: 'Reinforcement Learning'
+  nlp:
+    title: 'Natural Language Processing'
+  data-science:
+    title: 'Data Science'
+  automation:
+    title: 'Automation'
+  fun:
+    title: 'Fun Projects'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
