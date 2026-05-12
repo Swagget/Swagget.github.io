@@ -1,7 +1,7 @@
 ---
 title: "Reinforcement Learning for Bug Detection"
 collection: projects
-category: rl
+category: research
 permalink: /projects/rl-bug-detection
 excerpt: 'Showed that DQN gradient spikes can reliably flag buggy game states, proposing RL-based automated bug detection for video game testing.'
 date: 2023-10-06

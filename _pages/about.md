@@ -15,10 +15,10 @@ I'm a PhD student in Computer Science at the **University of Illinois at Chicago
 
 - **May 2026** — *LLM-as-Judge on a Budget* accepted at **AISTATS 2026** (with **Adobe Research**, collaboration with **Dr. Branislav Kveton**). [[arXiv]](https://arxiv.org/abs/2602.15481) [[PDF]](/files/LLM-as-a-Judge-on-a-Budget.pdf) [[Code]](https://github.com/Swagget/LLM-judgesteer)
 - **Dec 2025** — Presented *Efficient Algorithms for Combinatorial-Bandits with Monotonicity* at the **NeurIPS 2025 OPT Workshop** in San Diego, supported by a NeurIPS travel grant.
-- **2026** — Acted as a **Reviewer** for ICML 2026.
-- **2024** — Teaching Assistant for CS 401 (Algorithms) at UIC.
+- **April 2026** — Acted as a **Reviewer** for ICML 2026.
+- **2026** — Teaching Assistant for CS 401 (Algorithms) at UIC.
 
-**Recent:** *LLM-as-Judge on a Budget* (with **Adobe Research**; collaboration with **Dr. Branislav Kveton**) accepted at **AISTATS 2026**. Companion work, *Efficient Algorithms for Combinatorial-Bandits with Monotonicity*, accepted at the **NeurIPS 2025 OPT Workshop** (San Diego, Dec 2025).
+[//]: # (**Recent:** *LLM-as-Judge on a Budget* &#40;with **Adobe Research**; collaboration with **Dr. Branislav Kveton**&#41; accepted at **AISTATS 2026**. Companion work, *Efficient Algorithms for Combinatorial-Bandits with Monotonicity*, accepted at the **NeurIPS 2025 OPT Workshop** &#40;San Diego, Dec 2025&#41;.)
 
 [//]: # (Research Interests)
 

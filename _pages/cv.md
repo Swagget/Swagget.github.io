@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-📄 **[Download my CV as a PDF]({{ base_path }}/files/Resume.pdf)**
+📄 **[Download my CV as a PDF]({{ base_path }}/files/CV.pdf)**
 
 Education
 ======
@@ -95,6 +95,5 @@ Academic Service
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
+See the full [Publications page](/publications/) for papers with abstracts, links, and code.

@@ -1,7 +1,7 @@
 ---
 title: "Value Smoothing via Latent Embedding Similarity"
 collection: projects
-category: rl
+category: research
 permalink: /projects/value-smoothing-rl
 excerpt: 'Modified RL reward structure using embedding-space similarity to improve learning in sparse-reward environments, experimentally outperforming standard algorithms.'
 date: 2024-07-30
