@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2026-02-llm-judge-budget
 excerpt: 'This paper formulates LLM-as-a-judge evaluation as a variance-adaptive resource allocation problem, using multi-armed bandits to minimize estimation error under a fixed budget.'
-date: 02-2026
+date: 2026-02-01
 venue: 'AISTATS 2026'
 paperurl: 'https://aniketwagde.com/files/LLM-as-a-Judge-on-a-Budget.pdf'
 citation: 'Saha, A., Wagde, A., Kveton, B., LLM-as-Judge on a Budget. arXiv preprint arXiv:2602.15481 (2026).'
