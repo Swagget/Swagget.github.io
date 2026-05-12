@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Aniket Wagde, PhD Student in AI & Reinforcement Learning"
+title: "Aniket Wagde, PhD Student in LLM Evaluation & Online Learning"
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,8 +9,16 @@ redirect_from:
 
 Hi, thank you for visiting my home page!
 
-I'm a PhD student in Computer Science at the University of Illinois at Chicago (UIC), under the advisement of Professor [Aadirupa Saha](https://aadirupa.github.io/), where I explore the theoretical foundations and practical applications of intelligent decision-making systems. My research lies at the intersection of reinforcement learning, convex optimization, and machine learning theory, with a particular focus on how agents can learn efficiently in continuous, complex environments.
+I'm a PhD student in Computer Science at the University of Illinois at Chicago (UIC), under the advisement of Professor [Aadirupa Saha](https://aadirupa.github.io/), where I explore the theoretical foundations and practical applications of intelligent decision-making systems. My research lies at the intersection of LLM evaluation, multi-armed bandits, online learning, and machine learning theory.
 
+## News
+
+- **May 2026** — *LLM-as-Judge on a Budget* accepted at **AISTATS 2026** (with Adobe Research, collaboration with Dr. Branislav Kveton). [[arXiv]](https://arxiv.org/abs/2602.15481) [[PDF]](/files/LLM-as-a-Judge-on-a-Budget.pdf) [[Code]](https://github.com/Swagget/LLM-judgesteer)
+- **Dec 2025** — Presented *Efficient Algorithms for Combinatorial-Bandits with Monotonicity* at the **NeurIPS 2025 OPT Workshop** in San Diego, supported by a NeurIPS travel grant.
+- **2025** — Selected as **Reviewer** for ICML 2026.
+- **2024** — Teaching Assistant for CS 401 (Algorithms), CS 361 (Systems Programming), CS 211 (Programming Practicum) at UIC.
+
+**Recent:** *LLM-as-Judge on a Budget* (with Adobe Research; collaboration with Dr. Branislav Kveton) accepted at **AISTATS 2026**. Companion work, *Efficient Algorithms for Combinatorial-Bandits with Monotonicity*, accepted at the **NeurIPS 2025 OPT Workshop** (San Diego, Dec 2025).
 
 Research Interests
 ======
@@ -30,7 +38,7 @@ I'm currently working on combinatorial multi-armed bandits with monotonic aggreg
 
 My research introduces novel algorithms that efficiently identify optimal arm subsets without requiring knowledge of the underlying aggregation operator. By cleverly reducing combinatorial feedback to pairwise comparisons through randomization and selective sampling, we achieve sample complexity matching state-of-the-art methods while eliminating many restrictive assumptions. This work bridges pure exploration theory with practical applications where ranking and aggregation matter as much as selection.
 
-Recent Publication: Efficient Algorithms for Combinatorial-Bandits with Monotonicity (OPT 2025, co-authored with Aadirupa Saha)
+Recent Publication: *LLM-as-Judge on a Budget* (with Adobe Research; Dr. Branislav Kveton) — **AISTATS 2026**. Companion work *Efficient Algorithms for Combinatorial-Bandits with Monotonicity* — **NeurIPS 2025 OPT Workshop**.
 
 Previously, I've explored:
 

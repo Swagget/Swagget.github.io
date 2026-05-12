@@ -18,11 +18,12 @@ Education
 
 Work experience
 ======
-* August 2021 - Present: PhD Student
-  * University of Illinois at Chicago
+* August 2022 - Present: PhD Student
+  * University of Illinois at Chicago (transferred from MS to PhD track)
   * Location: Chicago
-  * Duties included: Partially studied masters here, and transferred to the PhD program. Research projects include: Solving combinatorial multi-armed bandits, exploring theoretical reinforcement learning
-  * Supervisor: Aadirupa Saha
+  * Research collaboration with **Adobe Research** (Dr. Branislav Kveton) on LLM-as-a-Judge evaluation under a fixed budget — accepted at AISTATS 2026.
+  * Other research: combinatorial multi-armed bandits with monotonic aggregation (NeurIPS 2025 OPT Workshop); value smoothing via latent embeddings for RL; metareasoning for MCTS.
+  * Supervisor: Prof. Aadirupa Saha
 
 * May 2023 - August 2023: Data Science Intern
   * Dell
@@ -68,10 +69,29 @@ Work experience
   
 Skills
 ======
-* Convex Optimization
-* Theoretical Machine Learning
-* Pytorch
-* Reinforcement Learning
+
+**Languages & Tools:** Python, PyTorch, TensorFlow, NumPy, scikit-learn, OpenCV, Pandas, Git, AWS, LaTeX, HuggingFace Transformers, OpenAI / Anthropic APIs, prompt engineering.
+
+**Research Areas:** Multi-Armed Bandits, Online Learning, Reinforcement Learning, Convex Optimization, Theoretical Machine Learning, LLM Evaluation, Deep Learning, NLP, Computer Vision.
+
+Awards
+======
+
+- **NeurIPS 2025 Conference Travel Grant** — competitive travel grant awarded to attend NeurIPS 2025 in San Diego, CA (Dec 2025).
+- **MS → PhD Track Transfer** — transferred to the PhD program at UIC based on research progress.
+- **Microsoft Imagine Cup** — Team placed in the top 8 nationally during undergrad.
+- **IISc–IBM Pravega Hackathon** — Awarded 2nd place.
+
+Talks & Presentations
+======
+
+- *LLM-as-Judge on a Budget* — to be presented at **AISTATS 2026** (Morocco, 2026).
+- *Efficient Algorithms for Combinatorial-Bandits with Monotonicity* — **NeurIPS 2025 OPT Workshop**, San Diego, CA, Dec 2025 (poster).
+
+Academic Service
+======
+
+- **Reviewer**, International Conference on Machine Learning (**ICML**) 2026.
 
 Publications
 ======
