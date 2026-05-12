@@ -17,4 +17,4 @@ Saha, A., **Wagde, A.**, Kveton, B.
 
 [[arXiv]](https://arxiv.org/abs/2602.15481) · [[PDF]](/files/LLM-as-a-Judge-on-a-Budget.pdf) · [[Code]](https://github.com/Swagget/LLM-judgesteer)
 
-Formulates LLM-as-a-judge evaluation as a variance-adaptive resource allocation problem; uses multi-armed bandits to minimize estimation error under a fixed budget.
+LLM judges are stochastic — querying the same prompt-response pair multiple times yields different scores, so naive uniform sampling wastes budget on low-variance pairs. We frame evaluation as a best-arm identification problem: model each prompt-response pair as a bandit arm, estimate per-pair score variance online, and adaptively concentrate queries where uncertainty is highest. Our algorithms ROBIN and ROBIN-HOOD provably minimize worst-case estimation error under a fixed query budget, with error bounds scaling with the sum of variances. Experiments on Summarize-From-Feedback and HelpSteer2 show substantial error reduction over uniform baselines at equal cost.

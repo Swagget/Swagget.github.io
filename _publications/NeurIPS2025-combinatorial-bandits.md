@@ -17,5 +17,5 @@ header:
 
 [[OpenReview]](https://openreview.net/forum?id=D3drIoEW5B) · [[PDF]](/files/NeurIPS2025-combinatorial-bandits.pdf)
 
-Reduces combinatorial bandits to bandits with pairwise preferences; matches state-of-the-art sample complexity while removing restrictive assumptions on the aggregation operator.
+In combinatorial bandits, a learner picks a subset of arms each round and observes a reward aggregated by an unknown function — prior work required strong structural assumptions (e.g., linearity) on that aggregator, leading to intractable sample complexities in the general case. We show that under monotonicity alone, two arms can be compared by randomizing over the remaining arms in the chosen set, effectively isolating a pairwise signal from combinatorial feedback. This reduction lets us plug in any pairwise-preference bandit algorithm, matching state-of-the-art sample complexity while dropping the restrictive aggregation assumptions that made previous approaches brittle.
 

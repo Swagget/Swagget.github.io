@@ -15,22 +15,28 @@ I'm a PhD student in Computer Science at the University of Illinois at Chicago (
 
 - **May 2026** — *LLM-as-Judge on a Budget* accepted at **AISTATS 2026** (with Adobe Research, collaboration with Dr. Branislav Kveton). [[arXiv]](https://arxiv.org/abs/2602.15481) [[PDF]](/files/LLM-as-a-Judge-on-a-Budget.pdf) [[Code]](https://github.com/Swagget/LLM-judgesteer)
 - **Dec 2025** — Presented *Efficient Algorithms for Combinatorial-Bandits with Monotonicity* at the **NeurIPS 2025 OPT Workshop** in San Diego, supported by a NeurIPS travel grant.
-- **2025** — Selected as **Reviewer** for ICML 2026.
-- **2024** — Teaching Assistant for CS 401 (Algorithms), CS 361 (Systems Programming), CS 211 (Programming Practicum) at UIC.
+- **2026** — Acted as a **Reviewer** for ICML 2026.
+- **2024** — Teaching Assistant for CS 401 (Algorithms) at UIC.
 
 **Recent:** *LLM-as-Judge on a Budget* (with Adobe Research; collaboration with Dr. Branislav Kveton) accepted at **AISTATS 2026**. Companion work, *Efficient Algorithms for Combinatorial-Bandits with Monotonicity*, accepted at the **NeurIPS 2025 OPT Workshop** (San Diego, Dec 2025).
 
-Research Interests
-======
-My work centers on building principled, computationally-aware learning systems that bridge theory and practice:
+[//]: # (Research Interests)
 
-- Abstraction in Reinforcement Learning: Developing hierarchical frameworks that enable agents to reason at multiple levels of granularity, reducing computational complexity while maintaining performance guarantees
+[//]: # (======)
 
-- Convex Optimization for Neural Networks: Investigating optimization landscapes and convergence properties of deep learning systems through the lens of convex analysis
+[//]: # (My work centers on building principled, computationally-aware learning systems that bridge theory and practice:)
 
-- Learning in Continuous Environments: Designing algorithms for sequential decision-making in high-dimensional, continuous state and action spaces
+[//]: # ()
+[//]: # (- Abstraction in Reinforcement Learning: Developing hierarchical frameworks that enable agents to reason at multiple levels of granularity, reducing computational complexity while maintaining performance guarantees)
 
-- Multi-Agent Learning & Communication: Exploring coordination mechanisms and emergent behaviors in systems where multiple intelligent agents interact
+[//]: # ()
+[//]: # (- Convex Optimization for Neural Networks: Investigating optimization landscapes and convergence properties of deep learning systems through the lens of convex analysis)
+
+[//]: # ()
+[//]: # (- Learning in Continuous Environments: Designing algorithms for sequential decision-making in high-dimensional, continuous state and action spaces)
+
+[//]: # ()
+[//]: # (- Multi-Agent Learning & Communication: Exploring coordination mechanisms and emergent behaviors in systems where multiple intelligent agents interact)
 
 Current Work
 ======

@@ -17,4 +17,4 @@ Rani, G., Pandey, U., **Wagde, A.A.**, et al.
 
 [[DOI]](https://doi.org/10.1007/s41870-022-01047-z) · [[PDF]](/files/rl-bug-paper.pdf)
 
-Proposes RLBGameTester, an autonomous DQN-based framework that detects programming bugs in video games by monitoring loss function anomalies during gameplay — no human supervision required.
+Proposes RLBGameTester: trains a DQN agent on Atari games, then monitors last-layer gradients during gameplay — bugs injected post-training cause sharp gradient spikes, flagging the exact iteration where the bug occurred without any human supervision.
