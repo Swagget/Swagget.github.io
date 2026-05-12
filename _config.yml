@@ -99,8 +99,6 @@ project_category:
     title: 'Computer Vision'
   ml:
     title: 'Machine Learning'
-  rl:
-    title: 'Reinforcement Learning'
   nlp:
     title: 'Natural Language Processing'
   data-science:
