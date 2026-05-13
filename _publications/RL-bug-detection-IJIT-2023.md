@@ -12,7 +12,7 @@ header:
   teaser: 'publications/ijit-2023-teaser.png'
 ---
 
-Rani, G., Pandey, U., **Wagde, A.A.**, et al.
+Rani, G., Pandey, U., **Wagde, A.A.**, Dhaka, V.S.
 *International Journal of Information Technology*, 15, 355–367, 2023.
 
 [[DOI]](https://doi.org/10.1007/s41870-022-01047-z) · [[PDF]](/files/rl-bug-paper.pdf)
