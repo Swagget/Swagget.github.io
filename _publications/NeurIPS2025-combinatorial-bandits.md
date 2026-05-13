@@ -7,7 +7,7 @@ excerpt: 'This paper describes a technique to reduce combinatorial-bandit proble
 date: 2025-12-01
 venue: 'NeurIPS 2025 OPT Workshop'
 #paperurl: 'https://aniketwagde.com/files/NeurIPS2025-combinatorial-bandits.pdf'
-#citation: 'Wagde, A., Saha, A., Efficient Algorithms for Combinatorial-Bandits with Monotonicity. NeurIPS OPTML (2025). https://openreview.net/forum?id=D3drIoEW5B'
+#citation: 'Wagde, A., Saha, A., Efficient Algorithms for Combinatorial-Bandits with Monotonicity. NeurIPS OPT (2025). https://openreview.net/forum?id=D3drIoEW5B'
 header:
   teaser: 'publications/neurips-2025-opt-teaser.png'
 ---
