@@ -6,8 +6,8 @@ permalink: /publication/2025-12-combinatorial-bandits
 excerpt: 'This paper describes a technique to reduce combinatorial-bandit problems to bandits with pairwise preferences and solve them efficiently.'
 date: 2025-12-01
 venue: 'NeurIPS 2025 OPT Workshop'
-paperurl: 'https://aniketwagde.com/files/NeurIPS2025-combinatorial-bandits.pdf'
-citation: 'Wagde, A., Saha, A., Efficient Algorithms for Combinatorial-Bandits with Monotonicity. NeurIPS OPTML (2025). https://openreview.net/forum?id=D3drIoEW5B'
+#paperurl: 'https://aniketwagde.com/files/NeurIPS2025-combinatorial-bandits.pdf'
+#citation: 'Wagde, A., Saha, A., Efficient Algorithms for Combinatorial-Bandits with Monotonicity. NeurIPS OPTML (2025). https://openreview.net/forum?id=D3drIoEW5B'
 header:
   teaser: 'publications/neurips-2025-opt-teaser.png'
 ---
