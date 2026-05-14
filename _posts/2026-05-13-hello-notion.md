@@ -22,3 +22,14 @@ Normal text.
 
 ![](/images/posts/hello-notion/1f0eac3db6ce.png)
 
+
+The equation is : $E=mc^2$ and it’s very cool.
+
+
+To make it look bigger:
+
+
+$$
+C = \sqrt{E/m}
+$$
+
