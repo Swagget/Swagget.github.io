@@ -12,6 +12,9 @@ Gemfile.lock
 node_modules
 package-lock.json
 
+# Notion sync secrets
+notion-sync/.env
+
 # Ignore the vendor file at root level and bundle for alternative installation
 /vendor/
 .bundle/
