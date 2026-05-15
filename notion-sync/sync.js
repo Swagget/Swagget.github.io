@@ -3,7 +3,7 @@ import { Client } from '@notionhq/client';
 import { NotionToMarkdown } from 'notion-to-md';
 import slugify from 'slugify';
 import { createHash } from 'node:crypto';
-import { mkdir, writeFile, access, readFile, unlink, rm } from 'node:fs/promises';
+import { mkdir, writeFile, access, unlink, rm, readdir } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import path from 'node:path';
 
@@ -22,26 +22,6 @@ if (!NOTION_TOKEN || !NOTION_DATABASE_ID) {
 const notion = new Client({ auth: NOTION_TOKEN });
 const outputDir = path.resolve(OUTPUT_DIR);
 const imageDir = path.resolve(IMAGE_DIR);
-const manifestPath = path.join(outputDir, '.notion-manifest.json');
-
-async function loadManifest() {
-  try {
-    const raw = await readFile(manifestPath, 'utf8');
-    return JSON.parse(raw);
-  } catch {
-    return {};
-  }
-}
-
-async function removePostFile(file) {
-  if (!file) return;
-  try { await unlink(path.join(outputDir, file)); } catch {}
-}
-
-async function removeImageDir(slug) {
-  if (!slug) return;
-  try { await rm(path.join(imageDir, slug), { recursive: true, force: true }); } catch {}
-}
 
 const plainText = (rich) => (rich ?? []).map((r) => r.plain_text).join('');
 
@@ -113,7 +93,7 @@ async function queryPublished() {
   return pages;
 }
 
-async function syncPage(page, prev) {
+async function syncPage(page) {
   const props = page.properties;
   const title = plainText(props.Title?.title) || 'untitled';
   const dateProp = props.Date?.date?.start;
@@ -149,52 +129,53 @@ async function syncPage(page, prev) {
 
   await mkdir(outputDir, { recursive: true });
   await writeFile(filepath, content, 'utf8');
-
-  if (prev) {
-    if (prev.file && prev.file !== filename) await removePostFile(prev.file);
-    if (prev.slug && prev.slug !== slug) await removeImageDir(prev.slug);
-  }
-
   return { written: filename, slug };
 }
 
 async function main() {
-  const prev = await loadManifest();
-  const next = {};
   const pages = await queryPublished();
   console.log(`found ${pages.length} published page(s)`);
+  const writtenFiles = new Set();
+  const writtenSlugs = new Set();
   let written = 0, skipped = 0, failed = 0;
   for (const page of pages) {
     try {
-      const r = await syncPage(page, prev[page.id]);
+      const r = await syncPage(page);
       if (r.written) {
         written++;
-        next[page.id] = { file: r.written, slug: r.slug };
+        writtenFiles.add(r.written);
+        writtenSlugs.add(r.slug);
         console.log(`wrote ${r.written}`);
       } else if (r.skipped) {
         skipped++;
-        if (prev[page.id]) next[page.id] = prev[page.id];
       }
     } catch (err) {
       failed++;
-      if (prev[page.id]) next[page.id] = prev[page.id];
       console.error(`failed page ${page.id}: ${err.message}`);
     }
   }
 
   let pruned = 0;
-  for (const [id, entry] of Object.entries(prev)) {
-    if (next[id]) continue;
-    await removePostFile(entry.file);
-    await removeImageDir(entry.slug);
-    pruned++;
-    console.log(`pruned ${entry.file}`);
-  }
+  try {
+    const entries = await readdir(outputDir);
+    for (const name of entries) {
+      if (name.startsWith('.')) continue;
+      if (!name.endsWith('.md')) continue;
+      if (writtenFiles.has(name)) continue;
+      try { await unlink(path.join(outputDir, name)); pruned++; console.log(`pruned ${name}`); } catch {}
+    }
+  } catch {}
 
-  await mkdir(outputDir, { recursive: true });
-  await writeFile(manifestPath, JSON.stringify(next, null, 2) + '\n', 'utf8');
+  let prunedImg = 0;
+  try {
+    const entries = await readdir(imageDir);
+    for (const name of entries) {
+      if (writtenSlugs.has(name)) continue;
+      try { await rm(path.join(imageDir, name), { recursive: true, force: true }); prunedImg++; console.log(`pruned images/${name}`); } catch {}
+    }
+  } catch {}
 
-  console.log(`done — written:${written} skipped:${skipped} failed:${failed} pruned:${pruned}`);
+  console.log(`done — written:${written} skipped:${skipped} failed:${failed} pruned:${pruned} prunedImg:${prunedImg}`);
   if (failed) process.exit(1);
 }
 
