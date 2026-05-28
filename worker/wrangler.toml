@@ -1,0 +1,30 @@
+name = "ask-aniket"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+
+# Tunables — safe to edit without touching code.
+[vars]
+ALLOWED_ORIGINS = "https://aniketwagde.com,https://www.aniketwagde.com,https://swagget.github.io"
+KB_URL = "https://aniketwagde.com/assets/data/knowledge-base.json"
+MODEL = "claude-sonnet-4-6"
+MAX_TOKENS = "1024"
+IP_LIMIT = "5"            # requests per IP per window
+IP_WINDOW_SECONDS = "3600"
+DAILY_CAP = "200"         # hard global cap to bound spend
+MAX_QUESTION_CHARS = "2000"
+MAX_FILE_BYTES = "5242880"  # 5 MB
+
+# Rate-limit + counter store. Create with:
+#   npx wrangler kv namespace create RL
+#   npx wrangler kv namespace create RL --preview
+# then paste the printed ids below.
+[[kv_namespaces]]
+binding = "RL"
+id = "77dbf1d594914f68918b8523d735bea0"
+preview_id = "d1002c107db948afbbf8eaec04076059"
+
+# Secrets are NOT stored here. Set them with:
+#   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put TURNSTILE_SECRET
+#   npx wrangler secret put NOTION_TOKEN
+#   npx wrangler secret put NOTION_HISTORY_DB_ID

@@ -40,12 +40,13 @@ jobs:
         run: |
           npm run sync
           npm run sync:projects
+          npm run build:kb
 
       - name: Commit + push if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A _posts _projects
+          git add -A _posts _projects assets/data/knowledge-base.json
           [ -d images/posts ] && git add -A images/posts || true
           [ -d images/projects ] && git add -A images/projects || true
           if git diff --cached --quiet; then

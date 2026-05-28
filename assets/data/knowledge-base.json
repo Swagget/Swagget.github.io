@@ -1,0 +1,294 @@
+{
+  "generatedAt": "2026-05-28T01:32:54.104Z",
+  "profile": {
+    "name": "Aniket Anil Wagde",
+    "headline": "PhD candidate at UIC, working on LLM evaluation, multi-armed bandits, and online learning. AISTATS 2026, NeurIPS 2025.",
+    "location": "Chicago",
+    "employer": "University of Illinois Chicago",
+    "email": "awagde2@uic.edu",
+    "links": {
+      "website": "https://aniketwagde.com",
+      "github": "https://github.com/Swagget",
+      "linkedin": "https://linkedin.com/in/aniket-wagde",
+      "googlescholar": "https://scholar.google.com/citations?user=utdW4uMAAAAJ&hl=en",
+      "orcid": "https://orcid.org/0000-0001-8508-3981"
+    }
+  },
+  "about": "Hi, thank you for visiting my home page!\n\nI'm a PhD student in Computer Science at the University of Illinois at Chicago (UIC), under the advisement of Professor Aadirupa Saha, where I explore the theoretical foundations and practical applications of intelligent decision-making systems. My research lies at the intersection of LLM evaluation, multi-armed bandits, online learning, and machine learning theory.\n\n News\n\n- May 2026 — LLM-as-Judge on a Budget accepted at AISTATS 2026 (with Adobe Research, collaboration with Dr. Branislav Kveton). [[arXiv]](https://arxiv.org/abs/2602.15481) [[PDF]](/files/LLM-as-a-Judge-on-a-Budget.pdf) [[Code]](https://github.com/Swagget/LLM-judgesteer)\n- Dec 2025 — Presented Efficient Algorithms for Combinatorial-Bandits with Monotonicity at the NeurIPS 2025 OPT Workshop in San Diego, supported by a NeurIPS travel grant.\n- April 2026 — Acted as a Reviewer for ICML 2026.\n- 2026 — Teaching Assistant for CS 401 (Algorithms) at UIC.\n\n[//]:  (Recent: LLM-as-Judge on a Budget &40;with Adobe Research; collaboration with Dr. Branislav Kveton&41; accepted at AISTATS 2026. Companion work, Efficient Algorithms for Combinatorial-Bandits with Monotonicity, accepted at the NeurIPS 2025 OPT Workshop &40;San Diego, Dec 2025&41;.)\n\n[//]:  (Research Interests)\n\n[//]:  (======)\n\n[//]:  (My work centers on building principled, computationally-aware learning systems that bridge theory and practice:)\n\n[//]:  ()\n[//]:  (- Abstraction in Reinforcement Learning: Developing hierarchical frameworks that enable agents to reason at multiple levels of granularity, reducing computational complexity while maintaining performance guarantees)\n\n[//]:  ()\n[//]:  (- Convex Optimization for Neural Networks: Investigating optimization landscapes and convergence properties of deep learning systems through the lens of convex analysis)\n\n[//]:  ()\n[//]:  (- Learning in Continuous Environments: Designing algorithms for sequential decision-making in high-dimensional, continuous state and action spaces)\n\n[//]:  ()\n[//]:  (- Multi-Agent Learning & Communication: Exploring coordination mechanisms and emergent behaviors in systems where multiple intelligent agents interact)\n\nCurrent Work\n======\nI'm currently working on combinatorial multi-armed bandits with monotonic aggregation functions. Traditional bandit algorithms assume linear reward structures, but real-world decision-making, from personalized recommendations to healthcare treatment selection, that often involve complex, non-linear aggregations.\n\nMy research introduces novel algorithms that efficiently identify optimal arm subsets without requiring knowledge of the underlying aggregation operator. By cleverly reducing combinatorial feedback to pairwise comparisons through randomization and selective sampling, we achieve sample complexity matching state-of-the-art methods while eliminating many restrictive assumptions. This work bridges pure exploration theory with practical applications where ranking and aggregation matter as much as selection.\n\n[//]:  (Recent Publication: LLM-as-Judge on a Budget &40;with Adobe Research; Dr. Branislav Kveton&41; — AISTATS 2026. Companion work Efficient Algorithms for Combinatorial-Bandits with Monotonicity — NeurIPS 2025 OPT Workshop.)\n\nPreviously, I've explored:\n\n- Value smoothing using similarity-based latent embeddings for reinforcement learning\n\n- Metareasoning and computational efficiency in Monte Carlo Tree Search\n\n- Applications of RL to bug detection in game environments\n\nBackground\n------\nBefore joining UIC's PhD program (originally as an MS student, later transferred), I earned my undergraduate degree from Manipal University Jaipur (2015-2019), where I developed foundational skills in machine learning and systems. I've also worked in various machine learning roles in the industry before choosing to focus on the research aspects of ML.\n\nWhat Drives Me\n------\n\nI believe the future of AI lies in systems that are not just powerful, but interpretable, efficient, and theoretically grounded. Whether it's understanding the partially convex structure underlying neural network training or designing RL agents that plan with limited compute, I'm passionate about research that connects elegant mathematical theory with real-world impact.\n\nWhen I'm not figuring out math or reading papers, you'll find me playing the piano, cooking, or running.",
+  "cv": "{% include basepath %}\n\n📄 Download my CV as a PDF\n\nEducation\n======\n Ph.D in Computer Science, University of Illinois Chicago, 2027 (expected)\n   Advisor: Prof. Aadirupa Saha\n   GPA: 3.87 — transferred from MS to PhD track based on research progress\n   Research: LLM evaluation (AISTATS 2026), combinatorial bandits (NeurIPS 2025 OPT Workshop)\n B.Tech in Computer Science, Manipal University Jaipur (2019)\n\nWork experience\n======\n August 2022 - Present: PhD Student\n   University of Illinois at Chicago (transferred from MS to PhD track)\n   Location: Chicago\n   Research collaboration with Adobe Research (Dr. Branislav Kveton) on LLM-as-a-Judge evaluation under a fixed budget — accepted at AISTATS 2026.\n   Other research: combinatorial multi-armed bandits with monotonic aggregation (NeurIPS 2025 OPT Workshop); value smoothing via latent embeddings for RL; metareasoning for MCTS.\n   Supervisor: Prof. Aadirupa Saha\n\n 2022 & 2023: Data Science Intern\n   Dell Technologies — Austin, Texas\n   Summer 2023 (Supervisor: Will Wilson): Applied prompt engineering and ChatGPT to summarize customer support conversations, reducing time-to-escalation for senior agents.\n   Summer 2022 (Supervisor: Ashutosh Singh): Built an embedding-based search system to surface answers from Dell's knowledge base; deployed to the live support website.\n\n November 2019 - March 2021: Deep Learning Engineer\n   Sensight Labs (Friendly Brands now)\n   Location: Bangalore\n   Built an intelligent shopping cart system to eliminate checkout queues; developed computer vision pipelines to identify grocery products. Projects: cart detection, grocery web scraping, automated data analysis, colour-based item selection, visual text-based search engine, video-to-image cropping tool.\n   Supervisor: Prashant Maurice\n\n August 2019 - November 2019: Machine Learning Engineer\n   IceCream Labs\n   Location: Bangalore\n   Built a zero-shot brand identification model (front-image only); 97% accuracy across 250 brands with no additional training required — infinitely extensible to new brands.\n   Supervisor: Bharat\n\n January 2019 - April 2019: Analytics Intern\n   Spinnaker Analytics\n   Location: Mumbai\n   Delivered predictive analytics models for client engagements; built a time-series forecasting system to predict Boston Children's Museum footfall and a return-prediction model for e-commerce orders.\n   Supervisor: Ashwin Meshram\n\n June 2018 - August 2018: Machine Learning Intern\n   IceCream Labs\n   Location: Bangalore\n   Developed CNN-based pipelines (Keras, OpenCV) to cluster visually similar products for e-commerce recommendations; built nutrition-table OCR pipelines and a synthetic data generation pipeline. Projects: Visual Search, Fashion Design Overlay, Variable MIL, Nutrition Table Mapping.\n   Supervisor: Prashant Maurice\n\n June 2017 - August 2017: Automation Intern\n   CSS Corp (Movate)\n   Location: Chennai\n   Built Python automation tools for internal teams (VLookup automation, workflow scripts); contributed plugins to open-source tools including NVDA.\n   Supervisor: Kiran Marri\n  \nSkills\n======\n\nLanguages & Tools: Python, PyTorch, TensorFlow, NumPy, scikit-learn, OpenCV, Pandas, Git, AWS, LaTeX, HuggingFace Transformers, OpenAI / Anthropic APIs, prompt engineering.\n\nResearch Areas: Multi-Armed Bandits, Online Learning, Reinforcement Learning, Convex Optimization, Theoretical Machine Learning, LLM Evaluation, Deep Learning, NLP, Computer Vision.\n\nAwards\n======\n\n- NeurIPS 2025 Conference Travel Grant — competitive travel grant awarded to attend NeurIPS 2025 in San Diego, CA (Dec 2025).\n- MS → PhD Track Transfer — transferred to the PhD program at UIC based on research progress.\n- Microsoft Imagine Cup — Team placed in the top 8 nationally during undergrad.\n- IISc–IBM Pravega Hackathon — Awarded 2nd place.\n\nTalks & Presentations\n======\n\n- LLM-as-Judge on a Budget — to be presented at AISTATS 2026 (Morocco, 2026).\n- Efficient Algorithms for Combinatorial-Bandits with Monotonicity — NeurIPS 2025 OPT Workshop, San Diego, CA, Dec 2025 (poster).\n\nAcademic Service\n======\n\n- Reviewer, International Conference on Machine Learning (ICML) 2026.\n\nPublications\n======\n\nSee the full Publications page for papers with abstracts, links, and code.",
+  "publications": [
+    {
+      "title": "LLM-as-Judge on a Budget",
+      "venue": "AISTATS 2026",
+      "date": "2026-02-01",
+      "excerpt": "This paper formulates LLM-as-a-judge evaluation as a variance-adaptive resource allocation problem, using multi-armed bandits to minimize estimation error under a fixed budget.",
+      "url": "https://aniketwagde.com/publication/2026-02-llm-judge-budget",
+      "body": "Saha, A., Wagde, A., Kveton, B.\nAISTATS 2026 (with Adobe Research)\n\n[[arXiv]](https://arxiv.org/abs/2602.15481) · [[PDF]](/files/LLM-as-a-Judge-on-a-Budget.pdf) · [[Code]](https://github.com/Swagget/LLM-judgesteer)\n\nLLM judges are stochastic — querying the same prompt-response pair multiple times yields different scores, so naive uniform sampling wastes budget on low-variance pairs. We frame evaluation as a best-arm identification problem: model each prompt-response pair as a bandit arm, estimate per-pair score variance online, and adaptively concentrate queries where uncertainty is highest. Our algorithms ROBIN and ROBIN-HOOD provably minimize worst-case estimation error under a fixed query budget, with error bounds scaling with the sum of variances. Experiments on Summarize-From-Feedback and HelpSteer2 show substantial error reduction over uniform baselines at equal cost."
+    },
+    {
+      "title": "Efficient Algorithms for Combinatorial-Bandits with Monotonicity",
+      "venue": "NeurIPS 2025 OPT Workshop",
+      "date": "2025-12-01",
+      "excerpt": "This paper describes a technique to reduce combinatorial-bandit problems to bandits with pairwise preferences and solve them efficiently.",
+      "url": "https://aniketwagde.com/publication/2025-12-combinatorial-bandits",
+      "body": "Wagde, A., Saha, A.\nNeurIPS 2025 OPT Workshop\n\n[[OpenReview]](https://openreview.net/forum?id=D3drIoEW5B) · [[PDF]](/files/NeurIPS2025-combinatorial-bandits.pdf)\n\nIn combinatorial bandits, a learner picks a subset of arms each round and observes a reward aggregated by an unknown function — prior work required strong structural assumptions (e.g., linearity) on that aggregator, leading to intractable sample complexities in the general case. We show that under monotonicity alone, two arms can be compared by randomizing over the remaining arms in the chosen set, effectively isolating a pairwise signal from combinatorial feedback. This reduction lets us plug in any pairwise-preference bandit algorithm, matching state-of-the-art sample complexity while dropping the restrictive aggregation assumptions that made previous approaches brittle."
+    },
+    {
+      "title": "A Deep Reinforcement Learning Technique for Bug Detection in Video Games",
+      "venue": "International Journal of Information Technology",
+      "date": "2023-01-01",
+      "excerpt": "This paper analyses neural networks deployed to play games to uncover bugs in the games.",
+      "url": "https://aniketwagde.com/publication/2023-01-bug-detection-paper",
+      "body": "Rani, G., Pandey, U., Wagde, A.A., Dhaka, V.S.\nInternational Journal of Information Technology, 15, 355–367, 2023.\n\n[[DOI]](https://doi.org/10.1007/s41870-022-01047-z) · [[PDF]](/files/rl-bug-paper.pdf)\n\nProposes RLBGameTester: trains a DQN agent on Atari games, then monitors last-layer gradients during gameplay — bugs injected post-training cause sharp gradient spikes, flagging the exact iteration where the bug occurred without any human supervision."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Webscraping for Grocery App",
+      "category": "data-science",
+      "techstack": "Machine Learning, Data Science, Natural Language Processing",
+      "date": "2027-03-01",
+      "excerpt": "Wanted to create a grocery app that contained all the groceries from all the major online grocery vendors. Allowing users to choose the groceries from each store individually.",
+      "url": "https://aniketwagde.com/projects/webscraping-grocery-app",
+      "body": "Wanted to create a grocery app that contained all the groceries from all the major online grocery vendors. Allowing users to choose the groceries from each store individually.\n\nFor this I created a configuration of AWS servers that scraped data from each vendor, matched products with slightly different descriptions. And created a unified database.\n\nThe nuance was that products differed based on the zipcode. \n\nSo I created several EC2 instances each with a different zipcode and set them to scrape the data of each vendor from each zipcode.\n\nWhenever an IP address got blocked, the server would automatically delete itself and a new one would be created to continue scraping data."
+    },
+    {
+      "title": "Colour based item selection",
+      "category": "cv",
+      "techstack": "Computer Vision, Machine Learning",
+      "date": "2026-12-01",
+      "excerpt": "In working to detect products placed in the cart Detecting when products are put into a cart. We wanted to use all the information that we were receiving from the camera.",
+      "url": "https://aniketwagde.com/projects/colour-based-item-selection",
+      "body": "In working to detect products placed in the cart Detecting when products are put into a cart. We wanted to use all the information that we were receiving from the camera. \n\nSo I extracted the top three colors that we received and matched them to the top three colors from each product. The “primary colors” each product used.\n\nTo seperate the product being placed from the environment we used optical flow to identify the product, and a skin detection algorithm to nullify the hand skin color from interfereing.\n\nHowever this turned out to not work effectively since different environments had different white balances, and the colors of the pixel values didn’t match up."
+    },
+    {
+      "title": "Created a Visual image Text-based search engine",
+      "category": "data-science",
+      "techstack": "Natural Language Processing, Data Science, Machine Learning",
+      "date": "2026-11-01",
+      "excerpt": "From the images captured I created a system that uses it well.",
+      "url": "https://aniketwagde.com/projects/visual-image-text-search",
+      "body": "From the images captured I created a system that uses it well.\n\nLike properly guesses based on probabilities and stuff.\n\nIn hindsight I really really should have used a bayesian network here. \n\nIt calculated the word and had each word mapped to each product.\n\nAnd the probabilities of the products match up then the product was determined to be correct. \n\nThis was then added to the system to detect products that were placed into the cart. in Detecting when products are put into a cart"
+    },
+    {
+      "title": "LLM as a Judge",
+      "category": "research",
+      "techstack": "Machine Learning, Optimization",
+      "date": "2026-02-10",
+      "excerpt": "LLM judges are stochastic — the same prompt-response pair scores differently across queries, so uniform sampling wastes budget on low-variance pairs. We model each pair as a bandit arm, estimate variance online, and…",
+      "codeurl": "https://github.com/Swagget/LLM-judgesteer111",
+      "url": "https://aniketwagde.com/projects/llm-judgesteer",
+      "body": "LLM judges are stochastic — the same prompt-response pair scores differently across queries, so uniform sampling wastes budget on low-variance pairs. We model each pair as a bandit arm, estimate variance online, and concentrate queries where uncertainty is highest.\n\nAlgorithms ROBIN and ROBIN-HOOD provably minimize worst-case estimation error under a fixed budget. Experiments on Summarize-From-Feedback and HelpSteer2 show substantial error reduction over uniform baselines at equal cost.\n\nPublished at AISTATS 2026 in collaboration with Adobe Research (Dr. Branislav Kveton) and Prof. Aadirupa Saha.\n\narXiv | PDF | Code"
+    },
+    {
+      "title": "Combinatorial Bandits with Monotonic Aggregation",
+      "category": "research",
+      "techstack": "Theoretical ML, Math",
+      "date": "2025-12-10",
+      "excerpt": "In combinatorial bandits, a learner picks a subset of arms each round and observes a reward aggregated by an unknown function. Prior work required strong structural assumptions (e.g., linearity) on the aggregator,…",
+      "url": "https://aniketwagde.com/projects/combinatorial-bandits",
+      "body": "In combinatorial bandits, a learner picks a subset of arms each round and observes a reward aggregated by an unknown function. Prior work required strong structural assumptions (e.g., linearity) on the aggregator, leading to intractable sample complexities in the general case.\n\nWe show that under monotonicity alone, two arms can be compared by randomizing over the remaining arms in the chosen set — isolating a pairwise signal from combinatorial feedback. This lets us plug in any pairwise-preference bandit algorithm, matching state-of-the-art sample complexity while dropping restrictive assumptions.\n\nPublished at the NeurIPS 2025 OPT Workshop with Prof. Aadirupa Saha.\n\nOpenReview | PDF"
+    },
+    {
+      "title": "Prompt Engineering",
+      "category": "nlp",
+      "techstack": "Natural Language Processing, Deep Learning, Generative AI",
+      "date": "2023-07-15",
+      "excerpt": "Used ChatGPT and prompt engineering to summarize customer support conversations.",
+      "url": "https://aniketwagde.com/projects/prompt-engineering",
+      "body": "Used ChatGPT and prompt engineering to summarize customer support conversations.\n\nSpeeding up customer support escalations, by allowing senior customer support to only read the summarized version of the conversation."
+    },
+    {
+      "title": "Value smoothing using similarity-based on latent embeddings",
+      "category": "research",
+      "techstack": "Reinforcement Learning, Deep Learning",
+      "date": "2023-02-01",
+      "excerpt": "Created an experiment to modify reward structure of reinforcement learning algorithms to enhance the learning capabilities in environments with sparse rewards. And experimentally showed that the algorithm performs…",
+      "codeurl": "https://github.com/srthiru/rl_project",
+      "url": "https://aniketwagde.com/projects/value-smoothing-rl",
+      "body": "Created an experiment to modify reward structure of reinforcement learning algorithms to enhance the learning capabilities in environments with sparse rewards. And experimentally showed that the algorithm performs better that standard in environments with sparce rewards. \n\nThis used similarity in embedding space to teach a model how to understand when the output is a negative reward, but “almost correct”.\n\nProjectReport.pdf"
+    },
+    {
+      "title": "Sentence Embedding Search",
+      "category": "data-science",
+      "techstack": "Data Science, Natural Language Processing",
+      "date": "2022-07-15",
+      "excerpt": "Wanted a way to search across dell support system. To guide customers directly to the relevant support articles. The problem was that the sentence search wasn’t context aware and keyword based.",
+      "url": "https://aniketwagde.com/projects/sentence-embedding-search",
+      "body": "Wanted a way to search across dell support system. To guide customers directly to the relevant support articles. The problem was that the sentence search wasn’t context aware and keyword based.\n\nThe solution was to switch the approach to an embedding based approach. Used Tensorflow’s Multilingual Universal Sentence Encoder Q&A Retrieval to generate embeddings out of questions that users ask and each sentence in the database. \n\nThis was then used to calculate the dot product between the question sentences and the sentences from the knowledge base.\n\nThis approach took too much time since there were too many sentences to compare on, so I created filters based on the language preference and the product type.\n\nThis solution was deployed to the customer support pipeline on dell.support.com"
+    },
+    {
+      "title": "Reinforcement learning research paper",
+      "category": "research",
+      "techstack": "Reinforcement Learning, Deep Learning, Fun!",
+      "date": "2022-01-01",
+      "excerpt": "Wanted to test whether an algorithm such as DQN which was able to play atari games. Could also detect when the game being played had bugs.",
+      "url": "https://aniketwagde.com/projects/rl-bug-detection",
+      "body": "Wanted to test whether an algorithm such as DQN which was able to play atari games. Could also detect when the game being played had bugs.\n\nThe idea was that reinforcement learning could also be used to understand game environments and detect when they were behaving erratically.\n\nFor this I tracked the gradients of the last layer of the neural network and observed them when bugs were thrown into the system.\n\nIt was observed that when a bug was in the system the gradients shot up massively, and this could be used to help with video game testing by flagging situations where bugs are detectable.\n\nRLforbugdetection.pdf"
+    },
+    {
+      "title": "Deblurring Computer Vision",
+      "category": "cv",
+      "techstack": "Computer Vision, Deep Learning",
+      "date": "2021-10-01",
+      "excerpt": "Implemented a research paper’s code that de blurred video content. However the code had an issue where the output videos occasionally had artifacts in areas that were relatively still and not moving.",
+      "url": "https://aniketwagde.com/projects/deblurring-cv",
+      "body": "Implemented a research paper’s code that de blurred video content. However the code had an issue where the output videos occasionally had artifacts in areas that were relatively still and not moving.\n\nWe then used optical flow with a threshold, when the threshold was crossed we used the prior method, however when the optical threshold wasn’t crossed, we used the frames from the input image itself.\n\nWe then wrote the methods in the form of a research paper.\n\nProjectReport.pdf"
+    },
+    {
+      "title": "Automated data analysis",
+      "category": "automation",
+      "techstack": "Automation, Machine Learning, Data Science",
+      "date": "2020-01-27",
+      "excerpt": "Wanted to create a tool that allowed non-technical users to be able to gather insights from the data from their company and effectively automate the job of a data analyst.",
+      "url": "https://aniketwagde.com/projects/automated-data-analysis",
+      "body": "Wanted to create a tool that allowed non-technical users to be able to gather insights from the data from their company and effectively automate the job of a data analyst.\n\nWe created a meta language and framework for performing generalized machine learning on a variety of columns. Allowing for clustering, regression and other techniques to gather insights. This framework allowed for massive scalability.\n\nHowever we soon realized that each company had incredibly messy data and needed heavy cleaning before we were able to use any of it."
+    },
+    {
+      "title": "Created a cropping tool + object tracking tool",
+      "category": "cv",
+      "techstack": "Computer Vision, Deep Learning, Data Science",
+      "date": "2020-01-01",
+      "excerpt": "Enabled creation of really cool datasets of objects, using videos of objects being manipulated by hand.",
+      "url": "https://aniketwagde.com/projects/cropping-object-tracking",
+      "body": "Enabled creation of really cool datasets of objects, using videos of objects being manipulated by hand.\n\nBy cropping the product once, and then training the tool to keep capturing the image as it moved around the scree, turned and other stuff.\n\nThen each frame is converted into an image, and use that image well."
+    },
+    {
+      "title": "Detecting when products are put into a cart",
+      "category": "cv",
+      "techstack": "Computer Vision, Deep Learning",
+      "date": "2019-11-15",
+      "excerpt": "Gathered the images of hands with the products.",
+      "url": "https://aniketwagde.com/projects/cart-detection",
+      "body": "Gathered the images of hands with the products.\n\nTo hands without products.\n\nAnd sequentially saw if the hand came first or a hand with product came first?\n\nDepending on that identified which product it was and used that to assess the number of products in the cart and measure their weights.\n\nThis was parallel to identifying what the product was which was done in Created a Visual image Text-based search engine."
+    },
+    {
+      "title": "Logo Prediction",
+      "category": "cv",
+      "techstack": "Computer Vision, Deep Learning",
+      "date": "2019-08-01",
+      "excerpt": "Created a solution to capture the logo of a company from images of the products.",
+      "url": "https://aniketwagde.com/projects/logo-prediction",
+      "body": "Created a solution to capture the logo of a company from images of the products.\n\nI used a system that captured all the “keypoints” from an image and matched keypoints from another image. This project was initially designed for picking out key landmarks from photos of their images on the internet.\n\nI created a tool to create a collage of Logos dynamically. And compare this collage of logos any product to identify which logo it most strongly correlated with.\n\n1. It compared the logos matching relative to each other.\n2. It considered it matched if it matched with one with significantly more confidence than the others.\n3. And case if it didn’t match with any one or matched with everything to roughly the same degree, then it considered it a new Brand Logo.\n4. It then cropped out the logo from the region with the region with the most key points."
+    },
+    {
+      "title": "Visual Search",
+      "category": "cv",
+      "techstack": "Computer Vision, Deep Learning",
+      "date": "2019-06-01",
+      "excerpt": "The objective was to group together similar objects based on visual appearance. The main",
+      "url": "https://aniketwagde.com/projects/visual-search",
+      "body": "The objective was to group together similar objects based on visual appearance. The main\nproblem was that this was based only on images, without taking the product titles or any\nattributes as inputs. This made it an unsupervised learning task.\nThe process used the ImageNet trained VGG 16 model to generate embeddings of the images\nand used various clustering algorithms to group the images together based on the embeddings.\nThere were some setbacks for example, it would not put lamps mirrored images in the same\ngroup, and a grayscale image would not be in the same group as the original image. Pooling the\nembeddings from 7x7 to 1x1 images eliminated the spatial data from the embeddings. This solved\nthe mirroring problem while also solving the grayscale problem.\nThe result was 20 groups of lamps, where all the groups had lamps that looked similar. And\nconsistently grouped together lamps that were mirror images of one another, and grouped lamps\nby similar color schemes."
+    },
+    {
+      "title": "Lathe Machine",
+      "category": "data-science",
+      "techstack": "Data Generation, Time Series Forecasting, Machine Learning, Data Science, Fun!",
+      "date": "2019-05-01",
+      "excerpt": "Connected a vibration sensor to a lathe machine to predict the level of wear using the amplitude of vibrations.",
+      "codeurl": "https://github.com/Swagget/lathe-machine-damage-analysis",
+      "url": "https://aniketwagde.com/projects/lathe-machine",
+      "body": "lathe-machine-damage-analysis\n\nConnected a vibration sensor to a lathe machine to predict the level of wear using the amplitude of vibrations.\n\nThe data was obtained by connecting a vibration sensor to lathe machines at Manipal University Jaipur. We connected sensors to machines where the drill bits have been replaced recently and ones that need to be switched.\nWe used the points where the drill bits were changed to test when a machine would require changing the drill bit.\n\nUsed ExponentialSmoothing, SimpleExpSmoothing, HoltWinters time-series forecasting algorithms to predict the vibrations and the increasing wear and tear of the machines.\n\nWe discovered that counterintuitively the vibrations were decreasing over time, this is likely because the timeframe of the data isn't sufficient to calculate an increasing trajectory of vibrations.\n\nConnected a vibration sensor to a lathe machine to predict the level of wear using the amplitude of vibrations."
+    },
+    {
+      "title": "Return Prediction",
+      "category": "data-science",
+      "techstack": "Machine Learning, Data Science",
+      "date": "2019-03-01",
+      "excerpt": "An online sales company had difficulties with their returns. As their returns were cutting heavily into their profits.",
+      "url": "https://aniketwagde.com/projects/return-prediction",
+      "body": "An online sales company had difficulties with their returns. As their returns were cutting heavily into their profits.\n\nAs their return policy was free returns and they bore the cost of shipping.\n\nWe were given all the data and asked to find solutions.\n\nWe implemented solutions to predict how likely the user was to return the product before they purchased it. \n\nWe also explored the data in depth along with shipping costs, and return costs to find relationships in the data that caused returns.\n\nWe discovered and proposed to the clients that particular categories are causing massive returns. Including socks and shoes, where the user orders different size shows. We then proposed a system to direct users towards a sizing chart for those categories. We also provided them a tool to generate a prediction of a probability that the user will return an item before they purchase the item with achieved an accuracy of 84%."
+    },
+    {
+      "title": "Boston Children’s Museum",
+      "category": "data-science",
+      "techstack": "Time Series Forecasting, Data Science",
+      "date": "2019-02-01",
+      "excerpt": "Created a tool using holt winter’s algo and other time series forecasting tools to create a tool that generates predictions of the amount of footfalls in Boston Children’s museum.",
+      "url": "https://aniketwagde.com/projects/boston-childrens-museum",
+      "body": "Created a tool using holt winter’s algo and other time series forecasting tools to create a tool that generates predictions of the amount of footfalls in Boston Children’s museum.\n\nThis was hosted on a website and provided as volunteer work, to assist Boston’s Chilren’s Musuem Predict the number of admissions over time."
+    },
+    {
+      "title": "Nutrition Table Mapping",
+      "category": "cv",
+      "techstack": "Data Generation, Computer Vision, Deep Learning",
+      "date": "2018-07-01",
+      "excerpt": "The goal was to digitize nutrition tables from images. Manually labeling data was too expensive and time consuming.",
+      "url": "https://aniketwagde.com/projects/nutrition-table-mapping",
+      "body": "The goal was to digitize nutrition tables from images. Manually labeling data was too expensive and time consuming. \n\nWe arrived at the point where we were able to segment the image into labeled sections with items such as “Sodium” and “29%”.\n\nThe next challenge became to successfully link the boxes together, for which we used a neural network that takes only the coordinates of the boxes and links them together. \n\nWith very few manually labeled data I created a tool to synthetically generate data and use it to train the neural network.\n\nThis was successful and we were able to digitize the inputs from beginning to end."
+    },
+    {
+      "title": "Variable Multiple Instance Learning",
+      "category": "cv",
+      "techstack": "Computer Vision",
+      "date": "2018-07-01",
+      "excerpt": "A common problem in machine learning is using a variable number of inputs to get a fixed output.",
+      "url": "https://aniketwagde.com/projects/variable-mil",
+      "body": "A common problem in machine learning is using a variable number of inputs to get a fixed output.\nFor example: Creating a 3d model on an object with multiple images at different angles. The problem\nwith using machine learning is that it would require a constant number of images for each object, and\nthe angles and order of the photos must be standard.\nThis problem could potentially be solved with the implementation of capsule networks however for the\nmoment they are unfeasible due to their large computational cost.\nThe standard solution to this problem is using multiple convolutional networks in parallel that takes\nvarious images in a rigid order. The problem is that this requires a consistent dataset of multiple images\ntaken in an order, with no missing images in the dataset to give a prediction with high confidence.\nThe solution implementing multiple convolutional networks was used to create a base from which\nimprovements could be made.\nI had the idea of using a model very similar to an RNN to take a variable size input and try to understand\nan embedding while also learning how to merge an embedding with an image. But there wasn’t enough\ntime left in the internship to test this hypothesis"
+    },
+    {
+      "title": "Fashion Design Overlay",
+      "category": "cv",
+      "techstack": "Computer Vision",
+      "date": "2018-06-01",
+      "excerpt": "The task was to create a system that could overlay any design on top of a cloth that a model was",
+      "url": "https://aniketwagde.com/projects/fashion-design-overlay",
+      "body": "The task was to create a system that could overlay any design on top of a cloth that a model was\nwearing. The model cloth was only a checkered pattern because it is easier to trace all the curves that\nfollow the shape of the model’s body.\nThe main challenge was to imitate the curves on the cloth. For example: the sides of a shirt where the\ndesign of the shirt appears warped. The approach we used was by taking all the points where the\nsquares intersect to map out the clothes’ curvature, and accordingly warp the design to be overlaid on\nthe cloth.\nHowever, this approach was limited because the edges of the shirt couldn’t be mapped perfectly. We\nweren’t able to come up with a workable solution to this problem."
+    },
+    {
+      "title": "Search Engine Results",
+      "category": "nlp",
+      "techstack": "Natural Language Processing",
+      "date": "2017-07-01",
+      "excerpt": "This program searches different search engines (Google and Bing) and uses different browsers (Chrome, Firefox, Internet Explorer). Searches for phrases and counts the number of “.com” URLs that show up before the…",
+      "url": "https://aniketwagde.com/projects/search-engine-results",
+      "body": "This program searches different search engines (Google and Bing) and uses different browsers (Chrome, Firefox, Internet Explorer). Searches for phrases and counts the number of “.com” URLs that show up before the Client’s URL.\nUsing a VPN this could be used to show the results for each country.\nThis was done specifically without using any packages that could be updated or where the support could at a later stage be removed.\nThis simply uses pip to install the required packages before the program runs, in case it is running on a new system that doesn’t have the required packages."
+    },
+    {
+      "title": "Vlookup Implementation",
+      "category": "automation",
+      "techstack": "Automation",
+      "date": "2017-07-01",
+      "excerpt": "Created a program to manipulate xlsx files.",
+      "url": "https://aniketwagde.com/projects/vlookup-implementation",
+      "body": "Created a program to manipulate xlsx files.\nThe one made earlier was hard coded just for a specific situation where one would take a column and compare them with the other column from the other file, find match and update the original file.\nThis was further enhanced and parameterized. It took parameters from the console. The parameters were the file names and the column names. This made it completely free of hard coding and could work on any xlsx."
+    },
+    {
+      "title": "The Image ratio distortion on zoom for 200%",
+      "category": "automation",
+      "techstack": "Automation",
+      "date": "2017-06-15",
+      "excerpt": "The requirement was to find if the page distorts, if zoomed to 200%.",
+      "url": "https://aniketwagde.com/projects/image-ratio-distortion",
+      "body": "The requirement was to find if the page distorts, if zoomed to 200%.\nMost of the overlapping images were created by intentional superimposition, created by client’s web developers. The major concern was, upon zooming, some images changed their aspect ratio which would result in distorted image.\nAfter going through the html code for a few hours, it was found that the default value of “object-fit” was set as “contain”. If this were to be changed to “cover” the aspect ratio didn’t change anymore.\nBy the next day, created a python code that scanned through the html code of all the files and would save the name of the images. Following which it would go through all the CSS files and look for the same images, if they were found, it would check if the attribute “object-fit” was unassigned and if it was, the code would change the file to change the attribute’s value to “cover”.\nThis automatically fixed all the image aspect ratio distortions present in every web page."
+    },
+    {
+      "title": "NVDA plugin to store the spoken history on a text file",
+      "category": "automation",
+      "techstack": "Automation",
+      "date": "2017-06-01",
+      "excerpt": "The requirement was to save the NVDA spoken history. This was not available since the Software didn’t have that option and there wasn’t any add-on to save history.",
+      "url": "https://aniketwagde.com/projects/nvda-plugin",
+      "body": "The requirement was to save the NVDA spoken history. This was not available since the Software didn’t have that option and there wasn’t any add-on to save history.\nHowever, there was a python shell built into the software and there was a speech viewer. Although that seemed like that was all that was needed, it turned out to be completely useless as the shell had no documentation to work with and one couldn’t to figure out how to extract information from another window.\nHence used another already created plugin and modified it to stream the history into a file on the desktop."
+    },
+    {
+      "title": "Sudoku Solver",
+      "category": "fun",
+      "techstack": "Fun!",
+      "date": "2016-11-01",
+      "excerpt": "Created a sudoku solver. It could take any sudoku puzzle and solve it as long as there was at least one tile where only one number was possible.",
+      "url": "https://aniketwagde.com/projects/sudoku-solver",
+      "body": "Created a sudoku solver. It could take any sudoku puzzle and solve it as long as there was at least one tile where only one number was possible.\n\nLater this was upgraded to guess which number would be on a tile and then backtrack to that point later if it reached a contradiction and realized that it was impossible for that number to be there.\n\nThen it eliminated that number from that position and guessed the next number.\n\nCoded this entire thing on notepad, with no versioning (because I was new) and never uploaded it to github unfortunately."
+    },
+    {
+      "title": "Emotional Response",
+      "category": "cv",
+      "techstack": "Data Science, Computer Vision, Fun!",
+      "date": "2016-02-01",
+      "excerpt": "This is a deep learning model that analyses photos to determine the emotional response of a human seeing the photo",
+      "codeurl": "https://github.com/Swagget/Emotional-Response",
+      "url": "https://aniketwagde.com/projects/emotional-response",
+      "body": "This is a deep learning model that analyses photos to determine the emotional response of a human seeing the photo\n\nThis uses images of artwork, with 8 basic human emotions: anger, fear, sadness, disgust, surprise, anxiety, trust and joy.\nThis uses images that create these feelings in humans to train a Convolutional neural network to predict the emotions humans would feel on viewing a piece of art or a photograph.\n\nThe results were very low, so instead we reduced the classifications to happy and sad and achieved significantly better results."
+    }
+  ]
+}

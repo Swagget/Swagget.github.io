@@ -1,0 +1,7 @@
+# Copy to .dev.vars for local `wrangler dev`. NEVER commit the real .dev.vars.
+# In dev you can skip Turnstile by setting DEV = "true".
+DEV = "true"
+ANTHROPIC_API_KEY = "sk-ant-..."
+TURNSTILE_SECRET = "1x0000000000000000000000000000000AA"
+NOTION_TOKEN = "ntn_..."
+NOTION_HISTORY_DB_ID = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"

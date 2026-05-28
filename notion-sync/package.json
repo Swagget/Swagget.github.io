@@ -6,7 +6,8 @@
   "description": "Sync Notion DB pages to Jekyll _posts as Markdown.",
   "scripts": {
     "sync": "node sync.js",
-    "sync:projects": "node sync-projects.js"
+    "sync:projects": "node sync-projects.js",
+    "build:kb": "node build-kb.js"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.15",

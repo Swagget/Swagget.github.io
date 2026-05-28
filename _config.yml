@@ -18,6 +18,11 @@ url                      : https://aniketwagde.com # The base hostname & protoco
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Swagget/Swagget.github.io"
 
+# Ask AI feature — fill in after deploying the Cloudflare Worker (see worker/README.md).
+ask_ai:
+  endpoint                : "https://ask-aniket.aniketwagde.workers.dev/ask"   # e.g. "https://ask-aniket.<subdomain>.workers.dev/ask"
+  turnstile_sitekey       : "0x4AAAAAADXjILB0Bw2LR681"   # Cloudflare Turnstile *site* key (public, safe to commit)
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
@@ -331,7 +336,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones # Always Uncomment this when uploading to github. Comment this when runing locally.
+#timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones # Always Uncomment this when uploading to github. Comment this when runing locally.
 
 
 # Plugins
