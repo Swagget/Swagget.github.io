@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28T01:32:54.104Z",
+  "generatedAt": "2026-05-28T03:08:25.875Z",
   "profile": {
     "name": "Aniket Anil Wagde",
     "headline": "PhD candidate at UIC, working on LLM evaluation, multi-armed bandits, and online learning. AISTATS 2026, NeurIPS 2025.",
@@ -44,15 +44,6 @@
   ],
   "projects": [
     {
-      "title": "Webscraping for Grocery App",
-      "category": "data-science",
-      "techstack": "Machine Learning, Data Science, Natural Language Processing",
-      "date": "2027-03-01",
-      "excerpt": "Wanted to create a grocery app that contained all the groceries from all the major online grocery vendors. Allowing users to choose the groceries from each store individually.",
-      "url": "https://aniketwagde.com/projects/webscraping-grocery-app",
-      "body": "Wanted to create a grocery app that contained all the groceries from all the major online grocery vendors. Allowing users to choose the groceries from each store individually.\n\nFor this I created a configuration of AWS servers that scraped data from each vendor, matched products with slightly different descriptions. And created a unified database.\n\nThe nuance was that products differed based on the zipcode. \n\nSo I created several EC2 instances each with a different zipcode and set them to scrape the data of each vendor from each zipcode.\n\nWhenever an IP address got blocked, the server would automatically delete itself and a new one would be created to continue scraping data."
-    },
-    {
       "title": "Colour based item selection",
       "category": "cv",
       "techstack": "Computer Vision, Machine Learning",
@@ -76,7 +67,7 @@
       "techstack": "Machine Learning, Optimization",
       "date": "2026-02-10",
       "excerpt": "LLM judges are stochastic — the same prompt-response pair scores differently across queries, so uniform sampling wastes budget on low-variance pairs. We model each pair as a bandit arm, estimate variance online, and…",
-      "codeurl": "https://github.com/Swagget/LLM-judgesteer111",
+      "codeurl": "https://github.com/Swagget/LLM-judgesteer",
       "url": "https://aniketwagde.com/projects/llm-judgesteer",
       "body": "LLM judges are stochastic — the same prompt-response pair scores differently across queries, so uniform sampling wastes budget on low-variance pairs. We model each pair as a bandit arm, estimate variance online, and concentrate queries where uncertainty is highest.\n\nAlgorithms ROBIN and ROBIN-HOOD provably minimize worst-case estimation error under a fixed budget. Experiments on Summarize-From-Feedback and HelpSteer2 show substantial error reduction over uniform baselines at equal cost.\n\nPublished at AISTATS 2026 in collaboration with Adobe Research (Dr. Branislav Kveton) and Prof. Aadirupa Saha.\n\narXiv | PDF | Code"
     },
@@ -113,9 +104,9 @@
       "category": "data-science",
       "techstack": "Data Science, Natural Language Processing",
       "date": "2022-07-15",
-      "excerpt": "Wanted a way to search across dell support system. To guide customers directly to the relevant support articles. The problem was that the sentence search wasn’t context aware and keyword based.",
+      "excerpt": "Wanted a way to search across Dell support system. To guide customers directly to the relevant support articles. The problem was that the sentence search wasn’t context aware and keyword based.",
       "url": "https://aniketwagde.com/projects/sentence-embedding-search",
-      "body": "Wanted a way to search across dell support system. To guide customers directly to the relevant support articles. The problem was that the sentence search wasn’t context aware and keyword based.\n\nThe solution was to switch the approach to an embedding based approach. Used Tensorflow’s Multilingual Universal Sentence Encoder Q&A Retrieval to generate embeddings out of questions that users ask and each sentence in the database. \n\nThis was then used to calculate the dot product between the question sentences and the sentences from the knowledge base.\n\nThis approach took too much time since there were too many sentences to compare on, so I created filters based on the language preference and the product type.\n\nThis solution was deployed to the customer support pipeline on dell.support.com"
+      "body": "Wanted a way to search across Dell support system. To guide customers directly to the relevant support articles. The problem was that the sentence search wasn’t context aware and keyword based.\n\nThe solution was to switch the approach to an embedding based approach. Used Tensorflow’s Multilingual Universal Sentence Encoder Q&A Retrieval to generate embeddings out of questions that users ask and each sentence in the database. \n\nThis was then used to calculate the dot product between the question sentences and the sentences from the knowledge base.\n\nThis approach took too much time since there were too many sentences to compare on, so I created filters based on the language preference and the product type.\n\nThis solution was deployed to the customer support pipeline on dell.support.com"
     },
     {
       "title": "Reinforcement learning research paper",
@@ -134,6 +125,15 @@
       "excerpt": "Implemented a research paper’s code that de blurred video content. However the code had an issue where the output videos occasionally had artifacts in areas that were relatively still and not moving.",
       "url": "https://aniketwagde.com/projects/deblurring-cv",
       "body": "Implemented a research paper’s code that de blurred video content. However the code had an issue where the output videos occasionally had artifacts in areas that were relatively still and not moving.\n\nWe then used optical flow with a threshold, when the threshold was crossed we used the prior method, however when the optical threshold wasn’t crossed, we used the frames from the input image itself.\n\nWe then wrote the methods in the form of a research paper.\n\nProjectReport.pdf"
+    },
+    {
+      "title": "Webscraping for Grocery App",
+      "category": "data-science",
+      "techstack": "Machine Learning, Data Science, Natural Language Processing",
+      "date": "2021-03-01",
+      "excerpt": "Wanted to create a grocery app that contained all the groceries from all the major online grocery vendors. Allowing users to choose the groceries from each store individually.",
+      "url": "https://aniketwagde.com/projects/webscraping-grocery-app",
+      "body": "Wanted to create a grocery app that contained all the groceries from all the major online grocery vendors. Allowing users to choose the groceries from each store individually.\n\nFor this I created a configuration of AWS servers that scraped data from each vendor, matched products with slightly different descriptions. And created a unified database.\n\nThe nuance was that products differed based on the zipcode. \n\nSo I created several EC2 instances each with a different zipcode and set them to scrape the data of each vendor from each zipcode.\n\nWhenever an IP address got blocked, the server would automatically delete itself and a new one would be created to continue scraping data."
     },
     {
       "title": "Automated data analysis",
