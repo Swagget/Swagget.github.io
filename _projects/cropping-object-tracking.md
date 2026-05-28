@@ -1,15 +1,19 @@
 ---
-title: "Cropping Tool and Object Tracking"
+title: "Created a cropping tool + object tracking tool"
 collection: projects
 category: cv
 permalink: /projects/cropping-object-tracking
-excerpt: 'Built a dataset generation tool that crops a product once and then tracks it through video frames as it moves and transforms.'
-date: 2023-10-06
-techstack: 'Python, OpenCV, Deep Learning, Computer Vision'
+excerpt: "Enabled creation of really cool datasets of objects, using videos of objects being manipulated by hand."
+date: 2020-01-01
+techstack: "Computer Vision, Deep Learning, Data Science"
+source: notion
 ---
 
-Enabled creation of datasets of objects using videos of objects being manipulated by hand.
+Enabled creation of really cool datasets of objects, using videos of objects being manipulated by hand.
 
-By cropping the product once and then training the tool to keep capturing the image as it moved around the screen, turned, and changed orientation, each frame was converted into an image to build out a dataset.
 
-This allowed for scalable data collection without needing manual labeling of every frame.
+By cropping the product once, and then training the tool to keep capturing the image as it moved around the scree, turned and other stuff.
+
+
+Then each frame is converted into an image, and use that image well.
+

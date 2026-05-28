@@ -3,15 +3,28 @@ title: "Visual Search"
 collection: projects
 category: cv
 permalink: /projects/visual-search
-excerpt: 'Grouped similar products by visual appearance using VGG16 embeddings and clustering, resolving mirroring and grayscale issues via spatial pooling.'
-date: 2023-10-06
-techstack: 'Python, VGG16, ImageNet, K-Means Clustering, PyTorch'
+excerpt: "The objective was to group together similar objects based on visual appearance. The main"
+date: 2019-06-01
+techstack: "Computer Vision, Deep Learning"
+source: notion
 ---
 
-The objective was to group together similar objects based on visual appearance alone, without product titles or attributes, making it an unsupervised learning task.
+The objective was to group together similar objects based on visual appearance. The main
+problem was that this was based only on images, without taking the product titles or any
+attributes as inputs. This made it an unsupervised learning task.
+The process used the ImageNet trained VGG 16 model to generate embeddings of the images
+and used various clustering algorithms to group the images together based on the embeddings.
+There were some setbacks for example, it would not put lamps mirrored images in the same
+group, and a grayscale image would not be in the same group as the original image. Pooling the
+embeddings from 7x7 to 1x1 images eliminated the spatial data from the embeddings. This solved
+the mirroring problem while also solving the grayscale problem.
+The result was 20 groups of lamps, where all the groups had lamps that looked similar. And
+consistently grouped together lamps that were mirror images of one another, and grouped lamps
+by similar color schemes.
 
-The process used the ImageNet-trained VGG16 model to generate embeddings of the images, then applied various clustering algorithms to group images based on those embeddings.
 
-Two setbacks were encountered: mirror images of lamps were not being placed in the same group, and grayscale images were separated from their color counterparts. Pooling the embeddings from 7x7 to 1x1 eliminated spatial data from the embeddings, solving both the mirroring and grayscale problems.
+![](/images/projects/visual-search/e390956f34b6.png)
 
-The result was 20 groups of lamps where all items in a group looked visually similar, with mirror images and matching color schemes consistently grouped together.
+
+![](/images/projects/visual-search/4d799e3fc41f.png)
+

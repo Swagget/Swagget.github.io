@@ -3,13 +3,20 @@ title: "Sudoku Solver"
 collection: projects
 category: fun
 permalink: /projects/sudoku-solver
-excerpt: 'Built a Sudoku solver with backtracking that can solve any valid puzzle, written entirely in Notepad as a first programming project.'
-date: 2023-10-04
-techstack: 'Python, Backtracking Algorithm'
+excerpt: "Created a sudoku solver. It could take any sudoku puzzle and solve it as long as there was at least one tile where only one number was possible."
+date: 2016-11-01
+techstack: "Fun!"
+source: notion
 ---
 
-Created a Sudoku solver that can take any puzzle and solve it as long as there is at least one tile where only one number is possible.
+Created a sudoku solver. It could take any sudoku puzzle and solve it as long as there was at least one tile where only one number was possible.
 
-Later upgraded with backtracking: the solver guesses a number for a tile, continues, and if it reaches a contradiction it backtracks to that point, eliminates the invalid number, and tries the next one.
 
-Coded entirely in Notepad with no version control — never uploaded to GitHub.
+Later this was upgraded to guess which number would be on a tile and then backtrack to that point later if it reached a contradiction and realized that it was impossible for that number to be there.
+
+
+Then it eliminated that number from that position and guessed the next number.
+
+
+Coded this entire thing on notepad, with no versioning (because I was new) and never uploaded it to github unfortunately.
+

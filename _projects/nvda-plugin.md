@@ -1,15 +1,15 @@
 ---
-title: "NVDA Plugin for Spoken History"
+title: "NVDA plugin to store the spoken history on a text file"
 collection: projects
 category: automation
 permalink: /projects/nvda-plugin
-excerpt: 'Modified an existing NVDA plugin to stream the screen reader spoken history to a desktop file, filling a gap not available in the software or any addon.'
-date: 2023-10-06
-techstack: 'Python, NVDA'
+excerpt: "The requirement was to save the NVDA spoken history. This was not available since the Software didn’t have that option and there wasn’t any add-on to save history."
+date: 2017-06-01
+techstack: "Automation"
+source: notion
 ---
 
-The requirement was to save the NVDA screen reader's spoken history — a feature not available in the software and not covered by any existing add-on.
+The requirement was to save the NVDA spoken history. This was not available since the Software didn’t have that option and there wasn’t any add-on to save history.
+However, there was a python shell built into the software and there was a speech viewer. Although that seemed like that was all that was needed, it turned out to be completely useless as the shell had no documentation to work with and one couldn’t to figure out how to extract information from another window.
+Hence used another already created plugin and modified it to stream the history into a file on the desktop.
 
-NVDA has a built-in Python shell and a speech viewer, but both turned out to be useless: the shell had no documentation, and extracting information from another window was not feasible.
-
-The solution was to take an already existing plugin and modify it to stream the spoken history into a file on the desktop.

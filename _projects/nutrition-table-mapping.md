@@ -3,15 +3,23 @@ title: "Nutrition Table Mapping"
 collection: projects
 category: cv
 permalink: /projects/nutrition-table-mapping
-excerpt: 'Digitized nutrition tables from product images end-to-end using a neural network trained on synthetically generated bounding box data.'
-date: 2023-10-06
-techstack: 'Python, Deep Learning, Neural Networks, Synthetic Data Generation'
+excerpt: "The goal was to digitize nutrition tables from images. Manually labeling data was too expensive and time consuming."
+date: 2018-07-01
+techstack: "Data Generation, Computer Vision, Deep Learning"
+source: notion
 ---
 
-The goal was to digitize nutrition tables from images. Manual data labeling was too expensive and time consuming.
+The goal was to digitize nutrition tables from images. Manually labeling data was too expensive and time consuming. 
 
-The pipeline reached a point where images could be segmented into labeled bounding boxes with items such as "Sodium" and "29%".
 
-The next challenge was linking the boxes together correctly. A neural network was built that takes only the coordinates of the boxes and learns to link them together.
+We arrived at the point where we were able to segment the image into labeled sections with items such as “Sodium” and “29%”.
 
-With very few manually labeled examples, a tool was created to synthetically generate training data. This was successful, and the full pipeline was able to digitize nutrition table inputs from beginning to end.
+
+The next challenge became to successfully link the boxes together, for which we used a neural network that takes only the coordinates of the boxes and links them together. 
+
+
+With very few manually labeled data I created a tool to synthetically generate data and use it to train the neural network.
+
+
+This was successful and we were able to digitize the inputs from beginning to end.
+

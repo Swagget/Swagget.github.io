@@ -1,17 +1,22 @@
 ---
-title: "Colour Based Item Selection"
+title: "Colour based item selection"
 collection: projects
 category: cv
 permalink: /projects/colour-based-item-selection
-excerpt: 'Identified products placed in a cart by matching dominant colors from the camera feed against a product color database using optical flow and skin detection.'
-date: 2023-10-06
-techstack: 'Python, OpenCV, Optical Flow, Machine Learning'
+excerpt: "In working to detect products placed in the cart Detecting when products are put into a cart. We wanted to use all the information that we were receiving from the camera."
+date: 2026-12-01
+techstack: "Computer Vision, Machine Learning"
+source: notion
 ---
 
-In working to detect products placed in the cart, the goal was to use all the information being received from the camera.
+In working to detect products placed in the cart [Detecting when products are put into a cart](https://www.notion.so/5490a21644004622826dd775dff9c883). We wanted to use all the information that we were receiving from the camera. 
 
-The top three colors received from the camera feed were extracted and matched to the top three "primary colors" of each product.
 
-To separate the product being placed from the environment, optical flow was used to identify the product, and a skin detection algorithm to nullify the hand skin color from interfering.
+So I extracted the top three colors that we received and matched them to the top three colors from each product. The “primary colors” each product used.
 
-However this turned out to not work effectively since different environments had different white balances, and the pixel values of colors didn't match up across environments.
+
+To seperate the product being placed from the environment we used optical flow to identify the product, and a skin detection algorithm to nullify the hand skin color from interfereing.
+
+
+However this turned out to not work effectively since different environments had different white balances, and the colors of the pixel values didn’t match up.
+

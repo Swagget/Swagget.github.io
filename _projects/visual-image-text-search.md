@@ -1,17 +1,28 @@
 ---
-title: "Visual Image Text-Based Search Engine"
+title: "Created a Visual image Text-based search engine"
 collection: projects
 category: data-science
 permalink: /projects/visual-image-text-search
-excerpt: 'Built a probabilistic image-to-text product mapping system to identify products placed in a cart from camera captures.'
-date: 2023-10-06
-techstack: 'Python, NLP, Probabilistic Modeling, Machine Learning'
+excerpt: "From the images captured I created a system that uses it well."
+date: 2026-11-01
+techstack: "Natural Language Processing, Data Science, Machine Learning"
+source: notion
 ---
 
-From the images captured, a system was created that uses probabilities to map words to products.
+From the images captured I created a system that uses it well.
 
-Each word was mapped to each product, and when the probabilities of the products matched up the product was determined to be correct.
 
-In hindsight, a Bayesian network would have been a much better fit for this problem.
+Like properly guesses based on probabilities and stuff.
 
-This was then integrated with the system to detect products that were placed into the cart.
+
+In hindsight I really really should have used a bayesian network here. 
+
+
+It calculated the word and had each word mapped to each product.
+
+
+And the probabilities of the products match up then the product was determined to be correct. 
+
+
+This was then added to the system to detect products that were placed into the cart. in [Detecting when products are put into a cart](https://www.notion.so/5490a21644004622826dd775dff9c883) 
+

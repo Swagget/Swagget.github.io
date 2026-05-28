@@ -52,6 +52,9 @@ When you are initially working on your website, it is very useful to be able to 
 1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stoping and restarting Jekyll.
     You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
 
+
+"bundle exec jekyll serve" is what I need to run to run this locally. And comment out timezone in _config.yml
+
 If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
 
 ## Using Docker

@@ -36,17 +36,21 @@ jobs:
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-        run: npm run sync
+          NOTION_PROJECTS_DATABASE_ID: ${{ secrets.NOTION_PROJECTS_DATABASE_ID }}
+        run: |
+          npm run sync
+          npm run sync:projects
 
       - name: Commit + push if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A _posts
+          git add -A _posts _projects
           [ -d images/posts ] && git add -A images/posts || true
+          [ -d images/projects ] && git add -A images/projects || true
           if git diff --cached --quiet; then
             echo "no changes"
           else
-            git commit -m "sync: notion posts"
+            git commit -m "sync: notion posts + projects"
             git push
           fi
