@@ -4,7 +4,7 @@ collection: projects
 category: data-science
 permalink: /projects/webscraping-grocery-app
 excerpt: "Wanted to create a grocery app that contained all the groceries from all the major online grocery vendors. Allowing users to choose the groceries from each store individually."
-date: 2027-03-01
+date: 2021-03-01
 techstack: "Machine Learning, Data Science, Natural Language Processing"
 source: notion
 ---

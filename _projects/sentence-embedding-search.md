@@ -3,13 +3,13 @@ title: "Sentence Embedding Search"
 collection: projects
 category: data-science
 permalink: /projects/sentence-embedding-search
-excerpt: "Wanted a way to search across dell support system. To guide customers directly to the relevant support articles. The problem was that the sentence search wasn’t context aware and keyword based."
+excerpt: "Wanted a way to search across Dell support system. To guide customers directly to the relevant support articles. The problem was that the sentence search wasn’t context aware and keyword based."
 date: 2022-07-15
 techstack: "Data Science, Natural Language Processing"
 source: notion
 ---
 
-Wanted a way to search across dell support system. To guide customers directly to the relevant support articles. The problem was that the sentence search wasn’t context aware and keyword based.
+Wanted a way to search across Dell support system. To guide customers directly to the relevant support articles. The problem was that the sentence search wasn’t context aware and keyword based.
 
 
 The solution was to switch the approach to an embedding based approach. Used Tensorflow’s [**Multilingual Universal Sentence Encoder Q&A Retrieval**](https://www.tensorflow.org/hub/tutorials/retrieval_with_tf_hub_universal_encoder_qa) to generate embeddings out of questions that users ask and each sentence in the database. 

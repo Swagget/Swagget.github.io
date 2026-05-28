@@ -6,7 +6,7 @@ permalink: /projects/llm-judgesteer
 excerpt: "LLM judges are stochastic — the same prompt-response pair scores differently across queries, so uniform sampling wastes budget on low-variance pairs. We model each pair as a bandit arm, estimate variance online, and…"
 date: 2026-02-10
 techstack: "Machine Learning, Optimization"
-codeurl: "https://github.com/Swagget/LLM-judgesteer111"
+codeurl: "https://github.com/Swagget/LLM-judgesteer"
 source: notion
 ---
 
