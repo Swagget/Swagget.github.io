@@ -30,15 +30,6 @@
   window.onloadTurnstileCallback = renderTurnstile;
   var tsPoll = setInterval(function () { if (window.turnstile) { clearInterval(tsPoll); renderTurnstile(); } }, 300);
 
-  // Tab switching.
-  root.querySelectorAll('.ask-tab').forEach(function (tab) {
-    tab.addEventListener('click', function () {
-      var name = tab.dataset.tab;
-      root.querySelectorAll('.ask-tab').forEach(function (t) { t.classList.toggle('is-active', t === tab); });
-      root.querySelectorAll('.ask-panel').forEach(function (p) { p.hidden = p.dataset.panel !== name; });
-    });
-  });
-
   // File picking + drag/drop.
   function setFile(f) {
     if (!f) return;

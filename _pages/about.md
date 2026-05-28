@@ -18,6 +18,64 @@ I'm a PhD student in Computer Science at the **University of Illinois at Chicago
 - **April 2026** — Acted as a **Reviewer** for ICML 2026.
 - **2026** — Teaching Assistant for CS 401 (Algorithms) at UIC.
 
+## Ask AI about me
+
+Ask anything about my research, projects, or background — or, if you're a recruiter, drop a job description and Claude will make the case for fit. Answers are grounded in the content of this site.
+
+<div class="ask-ai" id="ask-ai">
+  <section class="ask-panel" data-panel="question">
+    <h3 class="ask-h">💬 Ask a question</h3>
+    <textarea id="q-input" rows="3" maxlength="2000"
+      placeholder="e.g. What is your work on LLM evaluation about? What did you do at Dell?"></textarea>
+    <button class="ask-submit" data-mode="question">Ask</button>
+  </section>
+
+  <section class="ask-panel" data-panel="fit">
+    <h3 class="ask-h">📄 Recruiter: check my fit</h3>
+    <label class="ask-drop" id="ask-drop">
+      <input type="file" id="jd-file" accept=".pdf,.txt,.md" hidden>
+      <span id="jd-droptext">Drop a job description here (PDF or TXT), or click to choose</span>
+    </label>
+    <textarea id="jd-notes" rows="3" maxlength="16000"
+      placeholder="Optional: paste the JD as text instead, or add notes."></textarea>
+    <button class="ask-submit" data-mode="fit">Check fit</button>
+  </section>
+
+  <div id="ask-turnstile" class="cf-turnstile" style="margin:1em 0;"></div>
+  <div id="ask-status" class="ask-status" aria-live="polite"></div>
+  <div id="ask-result" class="ask-result"></div>
+</div>
+
+<style>
+.ask-ai{margin:1em 0 1.5em;}
+.ask-panel{margin-bottom:1.2em;padding:1em 1.1em;border:1px solid rgba(127,127,127,.25);border-radius:10px;background:rgba(127,127,127,.04);}
+.ask-h{margin:.1em 0 .7em 0;font-size:1.05em;font-weight:600;}
+.ask-panel textarea{width:100%;padding:.6em;border:1px solid #ccc;border-radius:6px;font-family:inherit;font-size:.95em;box-sizing:border-box;background:inherit;color:inherit;}
+.ask-drop{display:flex;align-items:center;justify-content:center;text-align:center;border:2px dashed #bbb;border-radius:8px;padding:1.2em;margin-bottom:.6em;cursor:pointer;color:#888;}
+.ask-drop.is-drag{border-color:#2a7ae2;color:#2a7ae2;background:rgba(42,122,226,.06);}
+.ask-submit{margin-top:.6em;padding:.65em 1.5em;border:none;border-radius:8px;font-weight:600;font-size:.98em;color:#fff;cursor:pointer;transition:background .15s,transform .05s,box-shadow .15s;box-shadow:0 1px 2px rgba(0,0,0,.12);}
+.ask-submit:hover{transform:translateY(-1px);box-shadow:0 3px 8px rgba(0,0,0,.15);}
+.ask-submit[data-mode="question"]{background:#16a085;}
+.ask-submit[data-mode="question"]:hover{background:#11876d;}
+.ask-submit[data-mode="fit"]{background:#2a7ae2;}
+.ask-submit[data-mode="fit"]:hover{background:#1d63c4;}
+.ask-submit[disabled]{opacity:.55;cursor:not-allowed;transform:none;box-shadow:none;}
+.ask-status{margin:.6em 0;color:#777;font-size:.9em;min-height:1.2em;}
+.ask-status.is-error{color:#c0392b;}
+.ask-result{white-space:normal;line-height:1.55;}
+.ask-result:empty{display:none;}
+.ask-result ul{margin:.4em 0 .8em 1.2em;}
+</style>
+
+<script>
+  window.ASK_AI = {
+    endpoint: {{ site.ask_ai.endpoint | default: "" | jsonify }},
+    sitekey: {{ site.ask_ai.turnstile_sitekey | default: "" | jsonify }}
+  };
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="{{ '/assets/js/ask.js' | relative_url }}"></script>
+
 [//]: # (**Recent:** *LLM-as-Judge on a Budget* &#40;with **Adobe Research**; collaboration with **Dr. Branislav Kveton**&#41; accepted at **AISTATS 2026**. Companion work, *Efficient Algorithms for Combinatorial-Bandits with Monotonicity*, accepted at the **NeurIPS 2025 OPT Workshop** &#40;San Diego, Dec 2025&#41;.)
 
 [//]: # (Research Interests)

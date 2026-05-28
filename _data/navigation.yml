@@ -28,9 +28,6 @@ main:
     
   - title: "CV"
     url: /cv/
-
-  - title: "Ask AI"
-    url: /ask/
     
   # - title: "CV"
   #   url: /cv-json/
