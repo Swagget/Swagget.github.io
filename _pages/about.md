@@ -28,6 +28,11 @@ Ask anything about my research, projects, or background — or, if you're a recr
     <textarea id="q-input" rows="3" maxlength="2000"
       placeholder="e.g. What is your work on LLM evaluation about? What did you do at Dell?"></textarea>
     <button class="ask-submit" data-mode="question">Ask</button>
+    <div class="ask-status" id="ask-status-question" aria-live="polite"></div>
+    <div class="ask-response" id="ask-response-question" hidden>
+      <div class="ask-response__label">Response</div>
+      <div class="ask-result" id="ask-result-question"></div>
+    </div>
   </section>
 
   <section class="ask-panel" data-panel="fit">
@@ -39,11 +44,14 @@ Ask anything about my research, projects, or background — or, if you're a recr
     <textarea id="jd-notes" rows="3" maxlength="16000"
       placeholder="Optional: paste the JD as text instead, or add notes."></textarea>
     <button class="ask-submit" data-mode="fit">Check fit</button>
+    <div class="ask-status" id="ask-status-fit" aria-live="polite"></div>
+    <div class="ask-response" id="ask-response-fit" hidden>
+      <div class="ask-response__label">Response</div>
+      <div class="ask-result" id="ask-result-fit"></div>
+    </div>
   </section>
 
   <div id="ask-turnstile" class="cf-turnstile" style="margin:1em 0;"></div>
-  <div id="ask-status" class="ask-status" aria-live="polite"></div>
-  <div id="ask-result" class="ask-result"></div>
 </div>
 
 <style>
@@ -62,6 +70,9 @@ Ask anything about my research, projects, or background — or, if you're a recr
 .ask-submit[disabled]{opacity:.55;cursor:not-allowed;transform:none;box-shadow:none;}
 .ask-status{margin:.6em 0;color:#777;font-size:.9em;min-height:1.2em;}
 .ask-status.is-error{color:#c0392b;}
+.ask-response{margin-top:.9em;border:1px solid rgba(127,127,127,.25);border-radius:8px;background:rgba(127,127,127,.06);padding:.7em .9em;}
+.ask-response__label{font-weight:600;font-size:.85em;letter-spacing:.04em;text-transform:uppercase;color:#777;margin-bottom:.4em;}
+.ask-response[hidden]{display:none;}
 .ask-result{white-space:normal;line-height:1.55;}
 .ask-result:empty{display:none;}
 .ask-result ul{margin:.4em 0 .8em 1.2em;}

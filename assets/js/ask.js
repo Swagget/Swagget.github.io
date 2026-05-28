@@ -6,8 +6,6 @@
   var root = document.getElementById('ask-ai');
   if (!root) return;
 
-  var statusEl = document.getElementById('ask-status');
-  var resultEl = document.getElementById('ask-result');
   var tsEl = document.getElementById('ask-turnstile');
   var fileInput = document.getElementById('jd-file');
   var dropText = document.getElementById('jd-droptext');
@@ -16,8 +14,19 @@
   var MAX_FILE = 5 * 1024 * 1024;
   var jdFile = null;
 
+  function panelEls(mode) {
+    var key = (mode === 'question') ? 'question' : 'fit';
+    return {
+      status: document.getElementById('ask-status-' + key),
+      wrap:   document.getElementById('ask-response-' + key),
+      result: document.getElementById('ask-result-' + key)
+    };
+  }
+  function otherMode(mode) { return mode === 'question' ? 'fit' : 'question'; }
+
   if (!cfg.endpoint) {
-    setStatus('The assistant isn’t configured yet (missing endpoint).', true);
+    setStatus('question', 'The assistant isn’t configured yet (missing endpoint).', true);
+    setStatus('fit', 'The assistant isn’t configured yet (missing endpoint).', true);
   }
 
   // Render the Turnstile widget once its script loads.
@@ -33,10 +42,10 @@
   // File picking + drag/drop.
   function setFile(f) {
     if (!f) return;
-    if (f.size > MAX_FILE) { setStatus('File too large (max 5 MB).', true); return; }
+    if (f.size > MAX_FILE) { setStatus('fit', 'File too large (max 5 MB).', true); return; }
     jdFile = f;
     dropText.textContent = '📎 ' + f.name;
-    setStatus('');
+    setStatus('fit', '');
   }
   fileInput.addEventListener('change', function () { setFile(fileInput.files[0]); });
   ['dragover', 'dragenter'].forEach(function (e) {
@@ -64,21 +73,22 @@
   }
 
   function submit(mode, btn) {
-    if (!cfg.endpoint) { setStatus('The assistant isn’t configured yet.', true); return; }
+    if (!cfg.endpoint) { setStatus(mode, 'The assistant isn’t configured yet.', true); return; }
     var payload = { mode: mode };
+    var els = panelEls(mode);
 
     if (mode === 'question') {
       var q = document.getElementById('q-input').value.trim();
-      if (!q) { setStatus('Please type a question.', true); return; }
+      if (!q) { setStatus(mode, 'Please type a question.', true); return; }
       payload.text = q;
     } else {
       var note = notes.value.trim();
-      if (!jdFile && !note) { setStatus('Upload a JD (PDF/TXT) or paste it as text.', true); return; }
+      if (!jdFile && !note) { setStatus(mode, 'Upload a JD (PDF/TXT) or paste it as text.', true); return; }
       if (note) payload.text = note;
     }
 
     var token = window.turnstile && window.turnstile.getResponse(tsEl);
-    if (cfg.sitekey && !token) { setStatus('Please complete the verification check.', true); return; }
+    if (cfg.sitekey && !token) { setStatus(mode, 'Please complete the verification check.', true); return; }
     payload.turnstileToken = token || '';
 
     var prep = (mode === 'fit' && jdFile)
@@ -88,8 +98,14 @@
       : Promise.resolve();
 
     setBusy(true);
-    setStatus('Thinking…');
-    resultEl.innerHTML = '';
+    setStatus(mode, 'Thinking…');
+    els.result.innerHTML = '';
+    els.wrap.hidden = true;
+    // clear the other panel's output so only the active panel shows a result
+    var otherEls = panelEls(otherMode(mode));
+    setStatus(otherMode(mode), '');
+    otherEls.result.innerHTML = '';
+    otherEls.wrap.hidden = true;
 
     prep.then(function () {
       return fetch(cfg.endpoint, {
@@ -100,11 +116,12 @@
     }).then(function (res) {
       return res.json().then(function (data) { return { ok: res.ok, data: data }; });
     }).then(function (r) {
-      if (!r.ok) { setStatus(r.data.error || 'Something went wrong.', true); return; }
-      setStatus('');
-      resultEl.innerHTML = renderMarkdown(r.data.reply || '');
+      if (!r.ok) { setStatus(mode, r.data.error || 'Something went wrong.', true); return; }
+      setStatus(mode, '');
+      els.result.innerHTML = renderMarkdown(r.data.reply || '');
+      els.wrap.hidden = false;
     }).catch(function () {
-      setStatus('Network error — please try again.', true);
+      setStatus(mode, 'Network error — please try again.', true);
     }).finally(function () {
       setBusy(false);
       if (window.turnstile) window.turnstile.reset(tsEl); // token is single-use
@@ -114,9 +131,11 @@
   function setBusy(b) {
     root.querySelectorAll('.ask-submit').forEach(function (el) { el.disabled = b; });
   }
-  function setStatus(msg, isErr) {
-    statusEl.textContent = msg || '';
-    statusEl.classList.toggle('is-error', !!isErr);
+  function setStatus(mode, msg, isErr) {
+    var el = panelEls(mode).status;
+    if (!el) return;
+    el.textContent = msg || '';
+    el.classList.toggle('is-error', !!isErr);
   }
 
   // Tiny, safe markdown: escape first, then apply a few formats.
