@@ -25,7 +25,10 @@ main:
         
   - title: "Blog"
     url: /year-archive/
-    
+
+  - title: "Slice of Life"
+    url: /slice-of-life/
+
   - title: "CV"
     url: /cv/
     
