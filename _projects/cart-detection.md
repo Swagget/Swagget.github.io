@@ -21,5 +21,5 @@ And sequentially saw if the hand came first or a hand with product came first?
 Depending on that identified which product it was and used that to assess the number of products in the cart and measure their weights.
 
 
-This was parallel to identifying what the product was which was done in [Created a Visual image Text-based search engine](https://www.notion.so/f312ba5e97844a79865e5490faa2e9ab).
+This was parallel to identifying what the product was which was done in [Created a Visual image Text-based search engine](https://app.notion.com/p/f312ba5e97844a79865e5490faa2e9ab).
 

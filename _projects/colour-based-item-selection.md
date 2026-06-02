@@ -9,7 +9,7 @@ techstack: "Computer Vision, Machine Learning"
 source: notion
 ---
 
-In working to detect products placed in the cart [Detecting when products are put into a cart](https://www.notion.so/5490a21644004622826dd775dff9c883). We wanted to use all the information that we were receiving from the camera. 
+In working to detect products placed in the cart [Detecting when products are put into a cart](https://app.notion.com/p/5490a21644004622826dd775dff9c883). We wanted to use all the information that we were receiving from the camera. 
 
 
 So I extracted the top three colors that we received and matched them to the top three colors from each product. The “primary colors” each product used.

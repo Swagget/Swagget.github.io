@@ -24,5 +24,5 @@ It calculated the word and had each word mapped to each product.
 And the probabilities of the products match up then the product was determined to be correct. 
 
 
-This was then added to the system to detect products that were placed into the cart. in [Detecting when products are put into a cart](https://www.notion.so/5490a21644004622826dd775dff9c883) 
+This was then added to the system to detect products that were placed into the cart. in [Detecting when products are put into a cart](https://app.notion.com/p/5490a21644004622826dd775dff9c883) 
 
