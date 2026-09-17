@@ -6,12 +6,14 @@ import { createHash } from 'node:crypto';
 import { mkdir, writeFile, access, unlink, rm, readdir, readFile } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import path from 'node:path';
+import { registerAttachmentTransformers } from './lib/attachments.js';
 
 const {
   NOTION_TOKEN,
   NOTION_PROJECTS_DATABASE_ID,
   PROJECTS_OUTPUT_DIR = '../_projects',
   PROJECTS_IMAGE_DIR = '../images/projects',
+  PROJECTS_FILE_DIR = '../files/projects',
 } = process.env;
 
 if (!NOTION_TOKEN || !NOTION_PROJECTS_DATABASE_ID) {
@@ -22,6 +24,7 @@ if (!NOTION_TOKEN || !NOTION_PROJECTS_DATABASE_ID) {
 const notion = new Client({ auth: NOTION_TOKEN });
 const outputDir = path.resolve(PROJECTS_OUTPUT_DIR);
 const imageDir = path.resolve(PROJECTS_IMAGE_DIR);
+const fileDir = path.resolve(PROJECTS_FILE_DIR);
 
 // Marker written into every Notion-managed file. Only files carrying it are
 // eligible for pruning, so hand-authored project pages are never deleted.
@@ -173,6 +176,13 @@ async function syncPage(page) {
       console.warn(`image download failed for "${title}": ${err.message}`);
       return `![${alt}](${url})`;
     }
+  });
+
+  registerAttachmentTransformers(n2m, {
+    slug,
+    title,
+    baseDir: fileDir,
+    sitePrefix: '/files/projects',
   });
 
   const blocks = await n2m.pageToMarkdown(page.id);

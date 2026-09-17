@@ -6,12 +6,14 @@ import { createHash } from 'node:crypto';
 import { mkdir, writeFile, access, unlink, rm, readdir } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import path from 'node:path';
+import { registerAttachmentTransformers } from './lib/attachments.js';
 
 const {
   NOTION_TOKEN,
   NOTION_DATABASE_ID,
   OUTPUT_DIR = '../_posts',
   IMAGE_DIR = '../images/posts',
+  FILE_DIR = '../files/posts',
 } = process.env;
 
 if (!NOTION_TOKEN || !NOTION_DATABASE_ID) {
@@ -22,6 +24,7 @@ if (!NOTION_TOKEN || !NOTION_DATABASE_ID) {
 const notion = new Client({ auth: NOTION_TOKEN });
 const outputDir = path.resolve(OUTPUT_DIR);
 const imageDir = path.resolve(IMAGE_DIR);
+const fileDir = path.resolve(FILE_DIR);
 
 const plainText = (rich) => (rich ?? []).map((r) => r.plain_text).join('');
 
@@ -118,6 +121,13 @@ async function syncPage(page) {
       console.warn(`image download failed for "${title}": ${err.message}`);
       return `![${alt}](${url})`;
     }
+  });
+
+  registerAttachmentTransformers(n2m, {
+    slug,
+    title,
+    baseDir: fileDir,
+    sitePrefix: '/files/posts',
   });
 
   const blocks = await n2m.pageToMarkdown(page.id);

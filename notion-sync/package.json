@@ -7,7 +7,8 @@
   "scripts": {
     "sync": "node sync.js",
     "sync:projects": "node sync-projects.js",
-    "build:kb": "node build-kb.js"
+    "build:kb": "node build-kb.js",
+    "check:links": "node check-links.js"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.15",

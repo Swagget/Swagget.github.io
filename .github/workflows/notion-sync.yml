@@ -42,6 +42,10 @@ jobs:
           npm run sync:projects
           npm run build:kb
 
+      - name: Check for expiring Notion links
+        working-directory: notion-sync
+        run: npm run check:links
+
       - name: Commit + push if changed
         run: |
           git config user.name  "github-actions[bot]"
@@ -49,6 +53,8 @@ jobs:
           git add -A _posts _projects assets/data/knowledge-base.json
           [ -d images/posts ] && git add -A images/posts || true
           [ -d images/projects ] && git add -A images/projects || true
+          [ -d files/posts ] && git add -A files/posts || true
+          [ -d files/projects ] && git add -A files/projects || true
           if git diff --cached --quiet; then
             echo "no changes"
           else
