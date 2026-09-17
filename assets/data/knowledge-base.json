@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T23:20:11.644Z",
+  "generatedAt": "2026-09-17T00:41:55.491Z",
   "profile": {
     "name": "Aniket Wagde",
     "headline": "PhD candidate at UIC, working on LLM evaluation, multi-armed bandits, and online learning. AISTATS 2026, NeurIPS 2025.",
@@ -97,7 +97,7 @@
       "excerpt": "Created an experiment to modify reward structure of reinforcement learning algorithms to enhance the learning capabilities in environments with sparse rewards. And experimentally showed that the algorithm performs…",
       "codeurl": "https://github.com/srthiru/rl_project",
       "url": "https://aniketwagde.com/projects/value-smoothing-rl",
-      "body": "Created an experiment to modify reward structure of reinforcement learning algorithms to enhance the learning capabilities in environments with sparse rewards. And experimentally showed that the algorithm performs better that standard in environments with sparce rewards. \n\nThis used similarity in embedding space to teach a model how to understand when the output is a negative reward, but “almost correct”.\n\nProjectReport.pdf"
+      "body": "Created an experiment to modify reward structure of reinforcement learning algorithms to enhance the learning capabilities in environments with sparse rewards. And experimentally showed that the algorithm performs better that standard in environments with sparce rewards. \n\nThis used similarity in embedding space to teach a model how to understand when the output is a negative reward, but “almost correct”.\n\nProject Report.pdf"
     },
     {
       "title": "Sentence Embedding Search",
@@ -115,7 +115,7 @@
       "date": "2022-01-01",
       "excerpt": "Wanted to test whether an algorithm such as DQN which was able to play atari games. Could also detect when the game being played had bugs.",
       "url": "https://aniketwagde.com/projects/rl-bug-detection",
-      "body": "Wanted to test whether an algorithm such as DQN which was able to play atari games. Could also detect when the game being played had bugs.\n\nThe idea was that reinforcement learning could also be used to understand game environments and detect when they were behaving erratically.\n\nFor this I tracked the gradients of the last layer of the neural network and observed them when bugs were thrown into the system.\n\nIt was observed that when a bug was in the system the gradients shot up massively, and this could be used to help with video game testing by flagging situations where bugs are detectable.\n\nRLforbugdetection.pdf"
+      "body": "Wanted to test whether an algorithm such as DQN which was able to play atari games. Could also detect when the game being played had bugs.\n\nThe idea was that reinforcement learning could also be used to understand game environments and detect when they were behaving erratically.\n\nFor this I tracked the gradients of the last layer of the neural network and observed them when bugs were thrown into the system.\n\nIt was observed that when a bug was in the system the gradients shot up massively, and this could be used to help with video game testing by flagging situations where bugs are detectable.\n\nRL for bug detection.pdf"
     },
     {
       "title": "Deblurring Computer Vision",
@@ -124,7 +124,7 @@
       "date": "2021-10-01",
       "excerpt": "Implemented a research paper’s code that de blurred video content. However the code had an issue where the output videos occasionally had artifacts in areas that were relatively still and not moving.",
       "url": "https://aniketwagde.com/projects/deblurring-cv",
-      "body": "Implemented a research paper’s code that de blurred video content. However the code had an issue where the output videos occasionally had artifacts in areas that were relatively still and not moving.\n\nWe then used optical flow with a threshold, when the threshold was crossed we used the prior method, however when the optical threshold wasn’t crossed, we used the frames from the input image itself.\n\nWe then wrote the methods in the form of a research paper.\n\nProjectReport.pdf"
+      "body": "Implemented a research paper’s code that de blurred video content. However the code had an issue where the output videos occasionally had artifacts in areas that were relatively still and not moving.\n\nWe then used optical flow with a threshold, when the threshold was crossed we used the prior method, however when the optical threshold wasn’t crossed, we used the frames from the input image itself.\n\nWe then wrote the methods in the form of a research paper.\n\nProject Report.pdf"
     },
     {
       "title": "Webscraping for Grocery App",

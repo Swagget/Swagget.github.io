@@ -21,5 +21,5 @@ For this I tracked the gradients of the last layer of the neural network and obs
 It was observed that when a bug was in the system the gradients shot up massively, and this could be used to help with video game testing by flagging situations where bugs are detectable.
 
 
-[RL_for_bug_detection.pdf](/files/rl-bug-paper.pdf)
+[RL for bug detection.pdf](/files/projects/rl-bug-detection/rl-for-bug-detection-53d74bc5c5ae.pdf)
 

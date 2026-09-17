@@ -16,5 +16,5 @@ Created an experiment to modify reward structure of reinforcement learning algor
 This used similarity in embedding space to teach a model how to understand when the output is a negative reward, but “almost correct”.
 
 
-[Project_Report.pdf](/files/projects/value-smoothing-rl/project-report.pdf)
+[Project Report.pdf](/files/projects/value-smoothing-rl/project-report-08faf353ff09.pdf)
 

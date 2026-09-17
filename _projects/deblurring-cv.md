@@ -18,5 +18,5 @@ We then used optical flow with a threshold, when the threshold was crossed we us
 We then wrote the methods in the form of a research paper.
 
 
-[Project_Report.pdf](/files/projects/deblurring-cv/project-report.pdf)
+[Project Report.pdf](/files/projects/deblurring-cv/project-report-21dbf3d8b1cc.pdf)
 
